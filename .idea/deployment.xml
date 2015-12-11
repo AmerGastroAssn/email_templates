@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="email_redesign_templates">
+    <serverData>
+      <paths name="email_redesign_templates">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/dev/Emails/email_redesign_templates" local="$PROJECT_DIR$" web="/dev/Emails/email_redesign_templates" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

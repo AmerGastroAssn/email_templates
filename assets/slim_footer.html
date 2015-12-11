@@ -1,0 +1,170 @@
+</div>
+
+
+<script type="text/javascript">
+    <!--
+    function less(comment, id) {
+        var result;
+        if (comment.length > 300) result = comment.substring(0, 300) + "<a href=\"#" + id + "\" onClick=\"javascript: show_all('" + comment + "','" + id + "')\" > more</a>";
+        else result = comment;
+        var comment_div = document.getElementById("comment_area" + id);
+        comment_div.innerHTML = result;
+    }
+
+    function show_all(comment, id) {
+        var comment_div = document.getElementById("comment_area" + id);
+        comment_div.innerHTML = comment + "<a href=\"#" + id + "\" onClick=\"javascript: less('" + comment + "','" + id + "')\" > less</a>";
+        ;
+    }
+
+    $.getJSON('/user/current.json', function(data) {
+        $('#comment_login').hide();
+        $('#show_comment_form').hide();
+        if (data.is_logged_in) {
+                $('.full_name').text(data.full_name);
+            $('.page_comment_name').val(data.full_name);
+            $('input#page_comment_updated_by_id').val(data.member_id);
+            $('input#page_comment_created_by_id').val(data.member_id);
+            
+            $('.user_comment_id' + data.member_id).show();
+            $('#show_comment_form').show();
+            if (false) {
+             $('div[class^="user_comment_id"]').show();
+            }
+        } else {
+                $.get("/user/login_ticket", function(data) {
+                        $('#lt').attr('value', data)
+                });
+            $('#show_comment_form').hide();
+                $('#comment_login').show();
+        }
+    });
+
+    $.getJSON('/page_comments/index.json',
+       {
+         request_url: window.location.pathname
+       },
+       function(comments) {
+       var items =[];
+       $.each(comments, function(index) {
+          items.push('<li id="' + comments[index].id + '">' + comments[index].body + '</li>');
+       });
+
+        $('<ul/>', {
+            'class': 'my-new-list',
+            html: items.join('')
+          }).appendTo('#comments');
+    });
+    $(document).ready(function() {
+        $('#new_page_comment-btn').click(function() {
+            $('#new_page_comment').submit()
+        });
+    });
+
+    //-->
+</script>
+<div id="comments"></div>
+    
+    <div class="comment-wrapper">
+    </div>
+
+
+
+
+    <div id="show_comment_form">
+     </div>
+     
+     <script>
+     
+     var textarea = $('#page_comment_body').val();
+     //alert(textarea);
+     
+     if ( textarea != 'Enter your comment' ) {
+     $('#page_comment_body').addClass('full');
+     }
+     
+     </script>
+     
+    <div id="comment_login">
+
+    </div>
+
+    </div>
+  </div>
+  <div id="sidebar">
+    <div class="box stay-connected email-print">
+<a href="javascript:mailpage()"><img src="/images/icon-email.gif" alt="Email"> <span>E-mail</span></a>
+&nbsp; &nbsp; <a href="javascript:window.print()"><img src="/images/icon-print.gif" alt="Print"> <span>Print</span></a>
+</div>
+
+
+<div class="box stay-connected">
+  <h3 style="margin-top:5px;">Stay Connected</h3>
+
+<a href="http://www.facebook.com/AmerGastroAssn" target="_blank"><img alt="Facebook-new" src="/assets/facebook-new.png" /></a>&nbsp;
+<a href="http://twitter.com/AmerGastroAssn" target="_blank"><img alt="Twitter-new" src="/assets/twitter-new.png" /></a>&nbsp;
+<a href="http://www.linkedin.com/groups?home=&gid=915257" target="_blank"><img alt="Linkedin-new" src="/assets/linkedin-new.png" /></a>&nbsp;
+<a href="http://www.youtube.com/amergastroassn" target="_blank"><img alt="Youtube-new" src="/assets/youtube-new.png" /></a>&nbsp;
+
+<br /><br />
+
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript">
+
+var addthis_config = {"data_track_clickback":true};
+
+var addthis_exclude= 'technorati,email,2tag,2linkme,100zakladok,aerosocial,allinmyfaves,amenme,arto,baang,bebo,biggerpockets,bitly,bizsugar,blinklist,bleetbox,bobrdobr,bentio,baidu,addio,7live7,shoutout,blip,blurpalicious,bodrdobr,blogtrottr,bloadrlite,bookmarked,blogmarks,bonzobox,socialbookmarkingnet,bookmerken,brainify,bordom,bookmarky,bookmarkedbyus,buddymarks,camyoo,chiq,citeulike,clickazoo,coliviade,cosmiq,designbump,diglog,diigo,domelhor,dipdive,digo,diggita,designmoo,connotea,cndig,classicalplace,cirip,care2,buzzzy,byderise,dosti,doower,dotnetkicks,douban,drimio,dropjack,dwellicious,dzone,edelight,ekudos,elefantapl,embarkons,eucliquei,evernote,extraplay,ezyspot,fabulously40,fark,farkinda,favable,favlogde,favoritus,flaker,flosspro,fnews,folkd,followtags,forceindya.fresqui,friendfeed,funp,fwisp,gabbr,gacetilla,gamekicker,givealink,globalgridn,gravee,greaterdebater,grono,grumper,habergentr,hackernews,hadashhot,hatena,hazarkor,healthimize,hedgehogs,hellotxt,hipstr,hitmarks,hotbookmark,hotklix,w3validator,hyves,idearef,identica,identica,ihavegot,infroazione,instapaper,investorlinks,iosociety,iwiw,jamespot,jisko,jumptags,kaboodle,kaevurnetShoutout,a1Webmarks,adifni,aero,allmyfaves,aviarycapture,bloggy,boardlite,Bobrdobr,bookmarked,bookmarkingNet,bookmarkycz,bookmerken,bryderise,elefantapl,Facebook,favlog,favorites,friendFeed,globalgrind,habergentr,healthimize,htmlvalidator,informazione,iSociety,ipup,kirtsy,kledy,ommenting,koornk,laaikit,ladenzeile,librerio,lifestream,linkNinja,linkagogo,linkShares,linkujcz,livefavoris,lockerblogger,lynki,mashbord,mawindo,meccho,meinvz,mekusharim,memoriu,meneame,mindbodygreen,misterwong_de,misterwong,mixx,moemesto,mototagz,multiply,mylinkvault,n4g,netlog,netvibes,netvouz,newstrust,newsvine,nujij,oknOtizie,oneview,orkut,osmosus,oyyla,pdfonline,pdfmyurl,phoneFavs,pimpthisblog,pingfm,planypus,plaxo,plurk,popEdition,posteezy,posterous,pratiba,print,printfriendly,propeller,pusha,quantcast,qzone,readitlater,receeve.it,reddit,RediffMyPage,RedKum,Scoop.at,segnalo,sekoman,shaveh,shetoldme,simpy,smiru,sodahead,sonico,speedtile,sphinn,spokenToYou,sportpost,springpad,spruzer,squidoo,startaid,startlap,storyfollower,strands,studiVZ,stuffpit,stumpedia,styleh,ve,surfpeople,svejo,symbaloo,tagmarksde,tagvn,tagza,tellmypolitician,theWebBlend,thinkfinity,thisnext,tipd,transferr,translate,tulinq,tusul,tweetmeme,viadeo,virb,visitezmonsite,vkontakte,vyoom,webnews,windycitizen,wireFan,worio,wykop,xanga,yammer,yardbarker,yazzem,yigg,yorumcuyum,youbookmarks,youmob,yoolink,domaintoolswhois,zakladoknet,zanatic,zooloo,zooLoo,a1webmarks,isociety,kipup,bookmerkende,kommenting,linkninja,linkshares,oknotizie,popedition,redkum,scoopat,rediff,thewebblend,studivz,surfpeoplenet,stylehive,myaol,dotnetshoutout,receeveit,phonefavs,aolmail,spokentoyou,twitthis,friendster,wirefan,aim,typepad';</script>
+
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://addthis.com/bookmark.php?v=250&amp;username=amergastroassn" class="addthis_button_compact">Share This Page</a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=amergastroassn"></script>
+<!-- AddThis Button END -->
+
+
+
+
+</div>
+
+    
+
+<div class="box ad">
+     <!-- Begin EHS Body Tag -->
+<div style="margin:0px auto 0px auto;text-align:center;position:relative;z-index:1">
+<a style="font-size:10px;color:#666666;text-decoration:none;font-family:arial;font-weight:normal;" href="http://www.e-healthcaresolutions.com/forms/?did=ehs.pro.aga.gastro" target="_blank">Advertisement</a><br>
+<script type="text/javascript">
+EHS_AD("t", "r", "160x600,120x600");
+</script>
+</div>
+<!-- End EHS Body Tag -->
+
+
+      
+    </div>
+
+  </div>
+</div><!-- /content -->
+
+
+  <div id="footer">
+
+
+<div class="box ad">
+         <!-- Begin EHS Body Tag -->
+<div style="margin:0px auto 0px auto;text-align:center;">
+<a style="font-size:10px;color:#666666;text-decoration:none;font-family:arial;font-weight:normal;" href="http://www.e-healthcaresolutions.com/forms/?did=ehs.pro.aga.gastro" target="_blank">Advertisement</a><br>
+<script type="text/javascript">
+EHS_AD("b", "r", "728x90,468x60");
+</script>
+</div>
+<!-- End EHS Body Tag -->
+    
+    </div>
+    <p style="float:left">&copy; 2014 American Gastroenterological Association. All rights reserved.</p>
+    <p style="text-align:right"><a title="BrowserMedia" href="http://www.browsermedia.com" target="new">Website development by BrowserMedia</a></p>
+    <p class="footer-links">
+      <a href="/">Home</a> | <a href="http://gastro.org/sitemap">Sitemap</a> |
+      <a href="/privacy-policy" title="Read our privacy policy">Privacy Policy</a> |
+      <a href="/rss" title="Subscribe to the RSS feed">RSS Feed</a> |
+      <a href="/about-aga/contact-us" title="Get in touch">Contact Us</a>
+    </p>

@@ -1,0 +1,1039 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Education Update - Text</title>
+	<style type="text/css">
+		table.wrapper {}
+
+		img.resize {}
+
+		.item {}
+
+		.item img {}
+
+		.item img.disappear {}
+
+		.item img.noresize {}
+
+		.item1 {}
+
+		.item1 {
+			width: 310px !important;
+		}
+
+		.item1 {
+			width: 480px !important;
+		}
+		/* Reset Styles */
+		/* Add 100px so mobile switch bar doesn't cover street address. */
+
+		body {
+			background-color: #ffffff;
+			color: #000000;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+		}
+
+		br,
+		strong br,
+		b br,
+		em br,
+		i br {
+			line-height: 100%;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			line-height: 100% !important;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		ul {
+			text-align: left;
+		}
+
+		a:link {
+			text-decoration: none!important;
+			color: #008FD4;
+		}
+
+		h1 a,
+		h2 a,
+		h3 a,
+		h4 a,
+		h5 a,
+		h6 a {
+			color: #0A5687!important;
+		}
+
+		h1 a:active,
+		h2 a:active,
+		h3 a:active,
+		h4 a:active,
+		h5 a:active,
+		h6 a:active {
+			color: red !important;
+		}
+		/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+		h1 a:visited,
+		h2 a:visited,
+		h3 a:visited,
+		h4 a:visited,
+		h5 a:visited,
+		h6 a:visited {
+			color: #008FD4 !important;
+		}
+		/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+		table td,
+		table tr {
+			border-collapse: collapse;
+		}
+
+		.yshortcuts,
+		.yshortcuts a,
+		.yshortcuts a:link,
+		.yshortcuts a:visited,
+		.yshortcuts a:hover,
+		.yshortcuts a span {
+			color: black;
+			text-decoration: none !important;
+			border-bottom: none !important;
+			background: none !important;
+		}
+		/* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+		/* Preheader */
+
+		span.preheader {
+			display: none !important;
+		}
+
+		#preheader {
+			display: none !important;
+		}
+
+		@media screen and (max-width: 480px) {
+			table.wrapper {
+				width: 310px !important;
+			}
+			img.resize {
+				width: 310px !important;
+				height: auto !important;
+			}
+			.sm-space-remover {
+				display: none;
+			}
+			.sm-space-adder {
+				height: 30px;
+				width: 30px;
+			}
+			.item {
+				width: 310px !important;
+			}
+			td#content.item {
+				padding: 10px 0 10px 20px !important;
+			}
+			tr td#header.item {
+				padding: 10px 10px 0 10px !important;
+			}
+			/*.item img {width: 310px !important;  height: auto !important;}*/
+			/*.item img.noresize {width: inherit !important;}*/
+			.item img.disappear {
+				display: none !important;
+			}
+			.logotext {
+				display: none;
+			}
+			td#seal {
+				padding: 0px!important;
+			}
+			#forward-btn {
+				max-height: 150px
+			}
+			/* footer */
+			td.block {
+				display: block !important;
+				padding: 10px!important;
+			}
+			#account {
+				padding: 0 !important;
+			}
+			td.social-footer {
+				padding: 0 0.5em !important;
+			}
+			td.logo-footer {
+				padding: 0 0 0 10px!important;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 699px) {
+			table.wrapper {
+				width: 480px !important;
+			}
+			img.resize {
+				width: 480px !important;
+				height: auto !important;
+			}
+			.sm-space-remover {
+				display: none;
+			}
+			.sm-space-adder {
+				height: 30px;
+				width: 30px;
+			}
+			.item {
+				width: 480px !important;
+			}
+			/*.item img {width: 480px !important;  height: auto !important;}
+            .item img.noresize {width: inherit !important;}*/
+			.item img.disappear {
+				display: none !important;
+			}
+			.logotext {
+				display: none;
+			}
+			td#seal {
+				padding: 0px!important;
+			}
+			#forward-btn {
+				max-width: 100px;
+			}
+			/* footer */
+			td.block {
+				display: block !important;
+				padding: 10px!important;
+			}
+			#account {
+				padding: 0 !important;
+			}
+			td.social-footer {
+				padding: 0 0.5em !important;
+			}
+			td.logo-footer {
+				padding: 0 0 0 10px!important;
+			}
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+</head>
+
+<body>
+	<!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+	<div id="preheader">
+		<singleline label="PreHeader">
+			<span style="display: none !important; font-size: 0px; color: #EAEEEF;"> </span>
+		</singleline>
+	</div>
+	<!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+	<!-- *-===== View Online =====-* -->
+	<table class="wrapper" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:5px; background-color: #EAEEEF;">
+		<tr bgcolor="#EAEEEF">
+			<td height="6"></td>
+		</tr>
+		<tr bgcolor="#EAEEEF">
+			<td align="center" bgcolor="#EAEEEF" style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+				Trouble viewing this message? <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a>
+			</td>
+		</tr>
+		<tr bgcolor="#EAEEEF">
+			<td height="6"></td>
+		</tr>
+		<!-- *-------===== mso spacer =====-------* -->
+		<tr>
+			<!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+		</tr>
+		<tr>
+			<!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+		</tr>
+		<!-- *-------=====/mso spacer =====-------* -->
+	</table>
+	<!-- *-===== /View Online =====-* -->
+
+	<table class="wrapper" width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:5px; background-color: #EAEEEF;">
+		<!-- *-===== Header =====-* -->
+		<tbody>
+			<tr>
+				<td align="center" style="background-color: #ffffff; fpadding: 0 !important; text-align: center;">
+					<!-- ********TABLE**********-->
+					<table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+						<tbody>
+							<tr>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0" class="socialicons">
+										<tbody>
+											<tr>
+												<td align="left" width="150"></td>
+												<td>
+													<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+					<table width="100" cellspacing="0" cellpadding="0" border="0" align="right" valign="top" id="forward-btn" class="item" style="padding: 5px; width: 100px; text-align: center;">
+						<tbody>
+							<tr>
+								<td width="80">
+									<a href="%%SSL_FORWARDTHIS%%">
+										<img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward" style="width: 80px;" />
+									</a>
+								</td>
+								<!--<td><a href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+							</tr>
+						</tbody>
+					</table>
+					<!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* -->
+				</td>
+			</tr>
+			<!-- #######-===== row =====-####### -->
+			<tr>
+				<td align="center" style="background-color: #ffffff; padding: 0!important; text-align: center;">
+					<!-- ********TABLE**********-->
+					<table width="10" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+						<tbody>
+							<tr>
+							</tr>
+						</tbody>
+					</table>
+					<!-- ********END TABLE**********-->
+					<!-- ********TABLE**********-->
+					<table width="500" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+						<tbody>
+							<tr>
+								<td class="item" style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; background-color: #ffffff; vertical-align: top; padding:0 20px!important; text-align:left;">
+									<p>
+										<a style="color: #008FD4; text-decoration: none;" href="#"></a>#AGA Education Update </p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- ********END TABLE**********-->
+					<!-- ********TABLE**********-->
+					<table width="240" cellspacing="0" cellpadding="0" border="0" align="right" class="item">
+						<tbody>
+							<tr>
+							</tr>
+						</tbody>
+					</table>
+					<!-- ********END TABLE**********-->
+					<!-- ********TABLE**********-->
+					<table width="20" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+						<tbody>
+							<tr>
+								<td width="10" height="1" class="item"></td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- ********END TABLE**********-->
+				</td>
+			</tr>
+			<!-- *-------=====/Header =====-------* -->
+
+			<!-- *-------===== mso spacer =====-------* -->
+			<tr>
+				<!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+			</tr>
+			<tr>
+				<!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+			</tr>
+			<!-- *-------=====/mso spacer =====-------* -->
+
+			<tr>
+				<td class="item" align="left" style="padding: 0 0 30px 0!important; text-align: center;">
+					<a href="#">
+						<img src="https://www.placehold.it/700x293" alt="Image" width="700" height="" class="resize" style="display: inline" border="0" align="top">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+
+
+
+					<!-- *-===== special article =====-* -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<!-- *-------===== mso spacer =====-------* -->
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+						<!-- *-------=====/mso spacer =====-------* -->
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px 0!important; margin: 20px;">
+								<p style="text-align: left; background-color: #ffffff; color: #000000; padding: 25px; margin:0px; border: solid 2px #008FD4;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Another header
+									</span>
+									<br/> #Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <a href="#" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- *-===== /special article =====-* -->
+					<!-- *-===== Section Break =====-* -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<!-- *-------===== mso spacer =====-------* -->
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+						<!-- *-------=====/mso spacer =====-------* -->
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 0!important;">
+								<p style="text-align:left; font-size: 25px; line-height: 1.3em; padding-top:0px;">
+									#Section Break line of text
+								</p>
+							</td>
+
+
+							<!-- 	<td align="left" width="15">
+            <img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+          </td> -->
+						</tr>
+					</table>
+					<!-- *-===== /Section Break =====-* -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== Section Break =====-* -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<!-- *-------===== mso spacer =====-------* -->
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+						<!-- *-------=====/mso spacer =====-------* -->
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="0" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 0!important;">
+								<p style="text-align:left; font-size: 25px; line-height: 1.3em; padding-top:0px;">
+									#Section Break line of text
+								</p>
+							</td>
+
+
+							<!-- 	<td align="left" width="15">
+            <img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+          </td> -->
+						</tr>
+					</table>
+					<!-- *-===== /Section Break =====-* -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+
+					<!-- *-===== spacer =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+						</tr>
+					</table>
+					<!-- *-===== /spacer =====-* -->
+
+					<!-- #######-=== no image story ===-####### -->
+					<table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+
+							<td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; fpadding: 0 !important;">
+								<p style="text-align: left;">
+									<span style="color:#0A5687; font-weight:bold; font-size:18px;">
+										#Header goes here
+									</span>
+									<br/> #The pound signs are just place holders to keep the styling. You need to remove them once you have written out your content. Notice all links that you create may appear as purple, however that color purple will change to light blue once it is
+									sent in your test. <a href="http://www.gastro.org/frestonibs" style="color:#008FD4; text-decoration: none;">#Read more</a>
+								</p>
+							</td>
+
+							<td align="left" width="15">
+								<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
+							</td>
+						</tr>
+					</table>
+					<!-- #######-=== /no image story ===-####### -->
+
+
+					<!-- *-===== End space =====-* -->
+					<table border="0" align="center" width="600" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td style="background-color: #EAEEEF;">
+								<p>&nbsp;</p>
+							</td>
+						</tr>
+					</table>
+					<!-- *-===== /End space =====-* -->
+
+					<!-- *-------===== mso spacer =====-------* -->
+					<tr>
+						<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+					</tr>
+					<!-- *-------=====/mso spacer =====-------* -->
+					<!-- ******** FOOTER **********-->
+					<table width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="item">
+						<tr>
+							<td align="left" valign="top" bgcolor="#2c292e" class="cell">
+								<table border="0" cellpadding="0" cellspacing="0" class="item">
+									<tr>
+										<td align="left" valign="top" class="block" style="padding:20px 0 0 30px;">
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" valign="top" class="logo-footer" style="">
+														<a href="#">
+															<img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png" alt="American Gastroenterological Association" style="padding: 13px 0 0 0;" width="72" height="72" border="0" />
+														</a>
+													</td>
+													<td align="left" valign="top" style="padding: 7px 0 0 20px;">
+														<table border="0" cellpadding="3">
+															<tr>
+																<td>
+																	<img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/cell_icon.png" style="max-width: 13px; padding: 5px 0 0 0;" alt="" />
+																</td>
+																<td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;"> 301-654-2055 </td>
+															</tr>
+															<tr>
+																<td>
+																	<img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/pin_drop_icon.png" style="max-width: 13px; padding: 0 10px 0 0;" alt="" />
+																</td>
+																<td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;">4930 Del Ray Ave.
+																	<br/> Bethesda, MD 20814</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td align="left" valign="top" class="block" id="social" style="padding: 0 0 20px 100px;">
+											<table border="0" cellpadding="0" cellspacing="0">
+												<tr>
+													<td align="left" valign="top" style="color:#a9a9a9;font-family: Helvetica, Arial, sans-serif;font-size:20px;font-weight:normal; padding: 0 0 0 10px;" colspan="4">
+														<p>Stay Connected</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" class="social-footer" style="padding:0 10px;">
+														<a href="https://www.facebook.com/AmerGastroAssn?ref=hl">
+															<img src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" alt="Facebook" width="55" height="54" border="0" style="display:block;" />
+														</a>
+													</td>
+													<td align="left" valign="top" class="social-footer" style="padding:0 10px;">
+														<a href="https://www.linkedin.com/grp/home?gid=915257">
+															<img src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" alt="LinkedIn" width="55" height="54" border="0" style="display:block;" />
+														</a>
+													</td>
+													<td align="left" valign="top" class="social-footer" style="padding:0 10px;">
+														<a href="https://www.youtube.com/channel/UC9gs7X1GwlFAqO0fEf0Tysg">
+															<img src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" alt="YouTube" width="55" height="54" border="0" style="display:block;" />
+														</a>
+													</td>
+													<td align="left" valign="top" class="social-footer" style="padding:0 10px;">
+														<a href="https://twitter.com/AmerGastroAssn?lang=en">
+															<img src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" alt="Twitter" width="55" height="54" border="0" style="display:block;" />
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top" bgcolor="#1e1c20" id="account" class="cell" style="padding:15px 0 25px 0;">
+								<table border="0" cellpadding="5" cellspacing="0" class="item">
+									<tr>
+										<td align="left" valign="top" class="opt-out" style="color:#ffffff;font-family: Helvetica, Arial, sans-serif;font-size:10px;line-height:20px;">
+											Copyright &copy; American Gastroenterological Association &bull; To opt out of AGA emails, change your <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="color:#008fd4;text-decoration:none;">email preferences</a>.
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- ******** END FOOTER **********-->
+		</tbody>
+	</table>
+
+
+
+	<!-- *-------===== external css =====-------* -->
+	<link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" />
+</body>
+
+</html>

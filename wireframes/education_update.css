@@ -1,0 +1,237 @@
+/* <!-- Responsive Styles --> */
+<style type="text/css">
+body {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #008FD4 !important;
+}
+
+span.preheader {
+    display: none;
+    font-size: 1px;
+}
+
+html {
+    width: 100%;
+}
+
+table {
+    font-size: 16px;
+    border: 0;
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+.container580 {
+    background-color: #EAEEEF;
+}
+
+.section-item {
+    width: 320px !important;
+}
+
+.content-only-section {
+    width: 620px !important;
+    margin: 0 auto;
+}
+
+.section-img {
+    float: right !important;
+}
+/*--- Preheader declaration in style block in addition to inline for Outlook */
+
+.preheader {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    color: transparent;
+    height: 0;
+    width: 0;
+}
+/* ----------- responsive goodness ----------- */
+
+@media only screen and (max-width: 640px) {
+    /*------ top header ------ */
+    .intros {
+        line-height: 24px !important;
+        font-size: 18px !important;
+    }
+    .main-header {
+        line-height: 23px !important;
+        font-size: 26px !important;
+    }
+    .subheader {
+        width: 390px !important;
+    }
+    .main-subheader {
+        line-height: 28px !important;
+    }
+    /*----- main image -------*/
+    .main-image img {
+        width: 420px !important;
+        height: auto !important;
+    }
+    /*-------- container --------*/
+    .container580 {
+        width: 440px !important;
+        background-color: #EAEEEF;
+    }
+    .container560 {
+        width: 420px !important;
+    }
+    .main-content {
+        width: 438px !important;
+    }
+    .item {
+        width: 440px !important;
+    }
+    /* -------  banner --------*/
+    .banner img {
+        width: 420px !important;
+        height: auto !important;
+    }
+    /*-------- secions ----------*/
+    .section-item {
+        width: 385px !important;
+    }
+    .content-only-section {
+        width: 350px !important;
+    }
+    .table-inside {
+        width: 418px !important;
+    }
+    .section-img img {
+        width: 440px !important;
+        height: auto !important;
+    }
+    /*-------- cta ------------*/
+    /* footer */
+    td.block {
+        display: block !important;
+        padding: 10px!important;
+    }
+    #account {
+        padding: 0 !important;
+    }
+    td.social-footer {
+        padding: 0 0.5em !important;
+    }
+    td.logo-footer {
+        padding: 0 0 0 10px!important;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /*------ top header ------ */
+    .intros {
+        line-height: 24px !important;
+        font-size: 18px !important;
+    }
+    .main-header {
+        line-height: 23px !important;
+        font-size: 18px !important;
+    }
+    .subheader {
+        width: 280px !important;
+    }
+    .main-subheader {
+        line-height: 28px !important;
+    }
+    /*----- main image -------*/
+    .main-image img {
+        width: 280px !important;
+        height: auto !important;
+    }
+    /*-------- container --------*/
+    .item {
+        width: 280px !important;
+    }
+    .container580 {
+        width: 280px !important;
+        background-color: #EAEEEF;
+    }
+    .container560 {
+        width: 260px !important;
+    }
+    .main-content {
+        width: 278px !important;
+    }
+    /*-------- divider --------*/
+    .divider img {
+        width: 278px !important;
+        height: 10px !important;
+    }
+    /* -------  banner --------*/
+    .banner img {
+        width: 260px !important;
+        height: auto !important;
+    }
+    /*-------- secions ----------*/
+    .section-item {
+        width: 225px !important;
+    }
+    .content-only-section {
+        width: 230px !important;
+    }
+    .table-inside {
+        width: 258px !important;
+    }
+    .section-img img {
+        width: 280px !important;
+        height: auto !important;
+    }
+    /*-------- cta ----------*/
+    .icon img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .cta-text {
+        text-align: center !important;
+        line-height: 24px !important;
+    }
+    /* footer */
+    td.block {
+        display: block !important;
+        padding: 10px!important;
+    }
+    #account {
+        padding: 0 !important;
+    }
+    td.social-footer {
+        padding: 0 0.5em !important;
+    }
+    td.logo-footer {
+        padding: 0 0 0 10px!important;
+    }
+}
+
+.main-header {
+    line-height: 23px !important;
+    font-size: 20px !important;
+}
+
+.main-header {
+    line-height: 23px !important;
+    font-size: 17px !important;
+}
+</style>

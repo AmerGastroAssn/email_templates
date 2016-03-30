@@ -2,9 +2,11 @@
 <html>
 
 <head>
-    <title>Sidebar</title>
-    <!-- *-------===== http://gastrodev.org/dev/Emails/email_redesign_templates/sidebar.html =====-------* -->
+    <title>PAC Short Form</title>
+    <!-- *-------===== http://gastrodev.org/dev/Emails/email_redesign_templates/short_form_hero_image.html =====-------* -->
     <style type="text/css">
+        /*<!-- *-------===== CSS Start =====-------* -->*/
+
         table.wrapper {}
 
         img.resize {}
@@ -59,13 +61,9 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        ul {
-            text-align: left;
-        }
-
         a:link {
-            text-decoration: none;
-            color: #008FD4;
+            text-decoration: none!important;
+            color: #008FD4!important;
         }
 
         h1 a,
@@ -115,20 +113,14 @@
             background: none !important;
         }
         /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+
         /* Preheader */
-
-        span.preheader {
-            display: none !important;
-        }
-
-        #preheader {
-            display: none !important;
-        }
+        span.preheader { display: none !important; }
+        #preheader { display: none !important; }
 
         @media screen and (max-width: 480px) {
             table.wrapper {
                 width: 310px !important;
-                padding-bottom: 10px!important;
             }
             img.resize {
                 width: 310px !important;
@@ -185,7 +177,7 @@
                 width: 480px !important;
             }
             /*.item img {width: 480px !important;  height: auto !important;}
-                  .item img.noresize {width: inherit !important;}*/
+            .item img.noresize {width: inherit !important;}*/
             .item img.disappear {
                 display: none !important;
             }
@@ -217,39 +209,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 </head>
-
 <body>
 
 <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
-<div id="preheader">
-    <singleline label="PreHeader">
-        <span style="display: none !important; font-size: 0px; color: #EAEEEF;"> </span>
-    </singleline>
+<div id ="preheader"><singleline label="PreHeader">
+    <span style="display: none !important; font-size: 0px; color: #EAEEEF;">    </span></singleline>
 </div>
 <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
 
 <!-- *-===== View Online =====-* -->
 <table class="wrapper" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:5px; background-color: #EAEEEF;">
-    <tr bgcolor="#EAEEEF">
-        <td height="6"></td>
-    </tr>
+    <tr bgcolor="#EAEEEF"><td height="6"></td></tr>
     <tr bgcolor="#EAEEEF">
         <td align="center" bgcolor="#EAEEEF" style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
             Trouble viewing this message? <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a>
 
         </td>
     </tr>
-    <tr bgcolor="#EAEEEF">
-        <td height="6"></td>
-    </tr>
-    <!-- *-------===== mso spacer =====-------* -->
-    <tr>
-        <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
-    </tr>
-    <tr>
-        <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
-    </tr>
-    <!-- *-------=====/mso spacer =====-------* -->
+    <tr bgcolor="#EAEEEF"><td height="6"></td></tr>
 </table>
 <!-- *-===== /View Online =====-* -->
 
@@ -268,9 +245,7 @@
                             <tbody>
                             <tr>
                                 <td align="left" width="150"></td>
-                                <td>
-                                    <img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
-                                </td>
+                                <td><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" /></td>
                             </tr>
                             </tbody>
                         </table>
@@ -282,12 +257,7 @@
             <table width="100" cellspacing="0" cellpadding="0" border="0" align="right" valign="top" id="forward-btn" class="item" style="padding: 5px; width: 100px; text-align: center;">
                 <tbody>
                 <tr>
-                    <td width="80">
-                        <a href="%%SSL_FORWARDTHIS%%">
-                            <img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward" style="width: 80px;" />
-                        </a>
-                    </td>
-                    <!--<td><a href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+                    <td width="80"><a href="%%SSL_FORWARDTHIS%%"><img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward"  style="width: 80px;"/></a></td>
                 </tr>
                 </tbody>
             </table>
@@ -300,14 +270,8 @@
             <!-- ********TABLE**********-->
             <table width="10" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
                 <tbody>
-                <!-- *-------===== mso spacer =====-------* -->
                 <tr>
-                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
                 </tr>
-                <tr>
-                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
-                </tr>
-                <!-- *-------=====/mso spacer =====-------* -->
                 </tbody>
             </table>
             <!-- ********END TABLE**********-->
@@ -352,127 +316,67 @@
     </tr>
     <!-- *-------=====/mso spacer =====-------* -->
 
-    <!-- ********IMAGE BANNER **********-->
     <tr>
-        <td class="item" align="left" style="padding: 0 0 10px 0 !important; text-align: center;">
-            <img width="700" height="" border="0" align="top" style="display: inline" class="resize" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/WLC+Image+Email_700.jpg">
+        <td class="item" align="left" style="padding: 0!important; text-align: center;">
+            <a href="#">
+                <img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/Freston+Image+Email_700.png" alt="Image" width="700" height="" class="resize" style="display: inline" border="0" align="top">
+            </a>
         </td>
     </tr>
-    <!-- ********END IMAGE BANNER **********-->
-
-
-
-    <!-- ******** HEADLINE **********-->
     <tr>
-        <td class="item" id="header" align="left" style="padding: 10px 50px; text-align: center;">
-            <span style="color: #000000; background-color: #EAEEEF; font-weight: normal; font-size: 32px; line-height: 1.3em; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; ">#Learn Skills to Increase Your Practical Knowledge and Inspirational Spark.</span>
-        </td>
-    </tr>
-    <!-- ******** END HEADLINE **********-->
-
-
-
-    <tr>
-        <!-- ******** COLUMN OF CONTENT **********-->
-        <td style="padding-bottom: 20px;">
-            <table width="410" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
-                <tr>
-                    <!--<td align="left" width="15">&nbsp;</td>-->
-                    <td class="item" id="content" align="left" style="color: #000000; background-color: #EAEEEF; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px 0 0 70px;">
-                        #Text to that goes along with the HEADER 1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been. <a href="http://www.gastro.org/sign-up" style="color: #008FD4; font-weight: normal; text-decoration:none;">#Register today</a>.
-
-                        <p style="padding-top: 10px;">
-                            <span style="color:#0A5687; font-size: 20px; font-weight: bold;">#A Header will go here</span>
-                            <br/> #Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.gastro.org/sign-up" style="color: #008FD4; font-weight: normal; text-decoration:none;">#Consiliums mori!</a> #Lorem Ipsum has been the industry's
-                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum passages.</p>
-
-                        <p>
-                            <span style="color:#0A5687; font-size: 20px; font-weight: bold;">#A Header will go here</span>
-                            <br/> #Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-
-
-                        <p>#Questions? Email <a href="mailto:communications@gastro.org" style="color: #008FD4; font-weight: normal; text-decoration:none;">#communications@gastro.org</a></p>
-                    </td>
-                </tr>
-
+        <td>
+            <table width="698" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
                 <!-- *-------===== mso spacer =====-------* -->
                 <tr>
                     <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
                 </tr>
-                <tr>
-                    <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
-                </tr>
-                <tr>
-                    <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
-                </tr>
-                <tr>
-                    <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
-                </tr>
                 <!-- *-------=====/mso spacer =====-------* -->
-            </table>
-            <!-- ******** END COLUMN OF CONTENT **********-->
-
-            <!-- ******** SPACER COLUMN **********-->
-            <table width="30" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
                 <tr>
-                    <td class="item" width="30" height="10"></td>
-                </tr>
-            </table>
-            <!-- ******** END SPACER COLUMN **********-->
-
-            <!-- ******** Sidebar **********-->
-            <table width="180" border="0" align="left" cellpadding="10" cellspacing="1" class="item">
-                <tr>
-                    <td class="item" style="text-align:center; background-color:#EAEEEF; color: #FFFFFF; vertical-align: top; padding:0;">
-                        <img class="resize" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/Freston+Image+Email_180.jpg" alt="image" width="180" />
+                    <td align="left" width="15">
+                        <img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
                     </td>
-                </tr>
-                <tr>
-                    <!--[if mso]><td style="background-color: #EAEEEF; padding: 3px;"></td><![endif]-->
-                </tr>
-                <tr>
-                    <td class="item" style="text-align:left; background-color: #0A5687; color: #ffffff; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px !important;">
-                        <span style="font-size: 20px; font-weight: bold; color: #F8A531;">#Freston 2015</span>
+
+                    <td class="item" align="center" width="100" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0 !important;">
+                        <span style="font-size: 30px; line-height: 1.3em;">#This header should only take up two lines.</span>
+
+
+                        <p>
+                            <span style="color: #5E9F10; text-transform: uppercase; line-height: 1.5em;">#When</span>
+                            <br/>
+                            <span align="center" style="font-size: 22px; font-weight: bold; line-height: 1.5em;">#Date goes here 2015</span>
+                        </p>
+
+
+                        <p>
+                            <span style="color: #5E9F10; text-transform: uppercase; line-height: 1.5em;">#Where</span>
+                            <br/>
+                            <span style="font-size: 22px; font-weight: bold; text-transform: uppercase; line-height: 1.5em; max-width: 300px;">#First line of location here <br/>
+										 #Second line of location here</span>
+                        </p>
+
+
+                        <p style="color: #008FD4; font-size: 18px; line-height: 1.3em;">#This can be a bit longer, Feel free to add up to 4-5 lines.  Also the button below can be edited to say anything by changing the text. Although, the button should not be more than one; maybe two words.</p>
+                        <p>&nbsp;</p>
+
+
+                        <!-- *-------===== button =====-------* -->
+                        <div style="margin: 0 auto;">
+                            <table style="background-color: #0A5687; padding: 5px 10px; border-radius: 30px; width: 130px; text-align: center;">
+                                <tr>
+                                    <td><a href="http://www.gastro.org/sign-up" style="color:#ffffff; font-family:Arial, sans-serif;font-size:16px;font-weight:normal; text-decoration: none; text-transform: uppercase;"><span style="color:#ffffff;">#Register</span></a></td>
+                                </tr>
+                            </table>
+                        </div>
                         <br/>
-								<span>#Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
-								</span>
-
-                        <!-- *-------===== Button =====-------* -->
-                        <center>
-                            <div style="margin: 20px 0 5px 0;">
-                                <table align="middle" style="background-color: #F8A531; padding: 3px 10px; width: 120px; text-align: center; border-radius: 30px;">
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.gastro.org/sign-up" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:16px;font-weight:normal; text-decoration: none; text-transform:uppercase;">
-                                                <span style="color:#ffffff;">#REGISTER</span>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </center>
-                        <!-- *-------=====/Button =====-------* -->
+                        <!-- *-------=====/button =====-------* -->
+                    </td>
+                    <td align="left" width="15">
+                        <img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />
                     </td>
                 </tr>
             </table>
-            <!-- ******** Sidebar **********-->
-
-
-
-
-            <!-- ******** SPACER COLUMN **********-->
-            <table width="30" border="0" align="left" cellpadding="0" cellspacing="0" class="item">
-                <tr>
-                    <td class="item" width="30" height="10"></td>
-                </tr>
-            </table>
-            <!-- ******** END SPACER COLUMN **********-->
-
-
         </td>
     </tr>
-
-
 
     <!-- ******** FOOTER **********-->
     <table width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="item">
@@ -484,21 +388,21 @@
                             <table border="0" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td align="left" valign="middle" class="logo-footer" style="">
-                                        <a href="#"><img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png" alt="American Gastroenterological Association" style="padding: 0;" width="72" height="72" border="0"/></a>
+                                        <a href="#"><img src="https://s3.amazonaws.com/agaemailassets/PAC-footer/AGA+PAC+Logo_Reversed_86x57.png" alt="American Gastroenterological Association" style="padding: 0;" width="86" height="57" border="0"/></a>
                                     </td>
                                     <td align="left" valign="middle" style="padding: 0 0 0 20px;">
                                         <table border="0" cellpadding="3">
                                             <tr>
                                                 <td>
-                                                    <img src="https://s3.amazonaws.com/agaemailassets/cell_icon_sm.png" style="max-width: 12px; padding: 0;" alt=""/>
+                                                    <img src="https://s3.amazonaws.com/agaemailassets/PAC-footer/AGA-PAC-phone_sm.png" style="max-width: 13px; padding: 0;" alt=""/>
                                                 </td>
                                                 <td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;"> 301-654-2055</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img src="https://s3.amazonaws.com/agaemailassets/pin_drop_icon_sm.png" style="max-width: 12px; padding: 0 10px 0 0;" alt=""/>
+                                                    <img src="https://s3.amazonaws.com/agaemailassets/PAC-footer/PAC-teardrop_sm.png" style="max-width: 13px; padding: 0 10px 0 0;" alt=""/>
                                                 </td>
-                                                <td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;">4930 Del Ray Ave.
+                                                <td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;">4926 Del Ray Ave.
                                                     <br/> Bethesda, MD 20814
                                                 </td>
                                             </tr>
@@ -548,10 +452,8 @@
         </tr>
     </table>
     <!-- ******** END FOOTER **********-->
-    </tbody>
+
 </table>
-
-
 
 <!-- *-------===== external css =====-------* -->
 <link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" />

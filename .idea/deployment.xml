@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="email_redesign_templates">
+  <component name="PublishConfigData" autoUpload="Always" serverName="email_redesign_templates" stopOnFirstError="true" preserveTimestamps="false" traceLevel="ERRORS" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;.gitignore;README.md">
     <serverData>
       <paths name="email_redesign_templates">
         <serverdata>

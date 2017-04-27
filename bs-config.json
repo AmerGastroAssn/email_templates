@@ -1,0 +1,6 @@
+{
+    "files" : "/./**/*.{js, html, css}",
+    "server" : { "baseDir" : "./ddsep_newsletter/" },
+    "https" : false,
+    "browser" : ["google-chrome", "firefox"]
+}

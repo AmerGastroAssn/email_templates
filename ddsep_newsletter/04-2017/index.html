@@ -1,0 +1,980 @@
+<!doctype html>
+<html data-ember-extension="1">
+
+<head>
+    <title>Gut Microbiome Newsletter</title>
+    <style type="text/css">
+        .item1 {
+            width: 310px !important;
+        }
+
+        .item1 {
+            width: 480px !important;
+        }
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
+            line-height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a:link {
+            text-decoration: none!important;
+            color: #008FD4;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687!important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: #0A5687!important;
+            text-decoration: underline;
+        }
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4 !important;
+        }
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        table td,
+        table tr {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
+        }
+
+        #preheader {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 480px) {
+            table.item {
+                border-spacing: 0;
+            }
+            table.wrapper {
+                width: 310px !important;
+            }
+            td#main {
+                padding-top: 0 !important;
+            }
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+            .item {
+                width: 310px !important;
+                padding-top: 20px;
+            }
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+            tr td#header.item {
+                padding: 10px 10px 0 !important;
+            }
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .content {
+                padding: 0 10px !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0 !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.item {
+                border-spacing: 0;
+            }
+            table.wrapper {
+                width: 480px !important;
+            }
+            td#main {
+                padding-top: 0 !important;
+            }
+            img.resize {
+                width: 480px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+            .item {
+                width: 480px !important;
+                padding-top: 20px;
+            }
+            /*.item img {width: 480px !important;  height: auto !important;}
+                  .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .content {
+                padding: 0 10px !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0 !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+    <div id="preheader">
+        <singleline label="PreHeader">
+            <span style="display: none !important; font-size: 0px; color: #FFFFFF;">Brought to you by the AGA Center for Gut Microbiome Research and Education.</span>
+        </singleline>
+    </div>
+    <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+    <table class="wrapper" style="margin-top: 5px; background-color: #ffffff;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tbody>
+            <tr bgcolor="#FFFFFF">
+                <td height="6">&nbsp;</td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td style="font-size: 11px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" align="center" bgcolor="#FFFFFF">Trouble viewing this message? <a style="text-decoration-line: none; color: #008fd4;" href="%%VIEWONLINE%%">View it online.</a></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td height="6">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- *-===== /View Online =====-* -->
+    <table class="wrapper" style="margin-top: 5px; background-color: #eaeeef;" border="0" width="700" cellspacing="0" cellpadding="0" align="center">
+        <!-- *-===== Header =====-* -->
+        <tbody>
+            <tr>
+                <td style="background-color: #ffffff; padding: 20px 0 !important; text-align: center;" align="center">
+                    <!-- ********TABLE**********-->
+                    <table class="item" border="0" width="100" cellspacing="0" cellpadding="0" align="left">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="socialicons" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" width="150">&nbsp;</td>
+                                                <td><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" width="15" height="15" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+                    <table id="forward-btn" class="item" style="padding: 5px; width: 100px; text-align: center;" border="0" width="100" cellspacing="0" cellpadding="0" align="right">
+                        <tbody>
+                            <tr>
+                                <td width="80">
+                                    <a href="%%SSL_FORWARDTHIS%%"> <img style="width: 80px;" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward" /> </a>
+                                </td>
+                                <!--<td><a href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* -->
+                </td>
+            </tr>
+            <!-- #######-===== row =====-####### -->
+            <tr>
+                <td style="background-color: #ffffff; padding: 0!important; text-align: center;" align="center">
+                    <!-- ********TABLE**********-->
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <table class="item" border="0" width="20" cellspacing="0" cellpadding="0" align="left">
+                        <tbody>
+                            <tr>
+                                <td class="item" width="10" height="1">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->
+                </td>
+            </tr>
+            <!-- *-------=====/Header =====-------* -->
+            <!-- *-------=====/Header =====-------* -->
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!-- [if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!-- [if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <tr>
+                <td class="item" style="padding: 0!important; text-align: center;" align="left"><img class="resize" style="margin: 0px;" src="http://www.gastro.org/2690-005RSH_17-5_Microbiome_Newsletter_Header_Image_FINAL3_700x300_72_RGB.jpg" alt="Image" width="700" height="" align="top" border="0" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="item" border="0" width="698" cellspacing="0" cellpadding="0" align="left">
+                        <tbody>
+                            <!-- *-------===== mso spacer =====-------* -->
+                            <!-- *-------=====/mso spacer =====-------* -->
+                            <tr>
+                                <!--<td align="left" width="15">-->
+                                <!--<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />-->
+                                <!--</td>-->
+                                <td id="main" class="item" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0;" align="center" width="100">
+                                    <!-- *= CONTENT goes below this =* -->
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px;" align="center" width="500">
+                                                    <p style="color: #0a5687; line-height: 1.3em; font-size: 24px;">Your update on all things gut microbiome, from the <a style="text-decoration: none!important; color: #008FD4;" href="http://www.gastro.org/about/initiatives/aga-center-for-gut-microbiome-research-education">AGA Center for Gut Microbiome Research &amp; Education</a>.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">From Our Experts</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="100" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><img class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; margin: 0px; padding-left: 0px !important;" src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/GettyImages-612852710.jpg"
+                                                                        alt="" width="150" height="100" align="" border="0" /></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="item" border="0" width="400" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0"><strong><a style="text-decoration: none!important; color: #008FD4;" href="http://www.gastro.org/news_items/why-gastroenterologists-should-care-about-the-gut-microbiome">Why Gastroenterologists Should Care About the Gut Microbiome</a></strong></td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="140"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">Gail A. Hecht, MD, MS, AGAF, chair of the AGA Center for Gut Microbiome Research and Education, explains why the gut microbiome is receiving so much attention, and why practitioners and researchers alike should pay attention.&nbsp;<a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/news_items/why-gastroenterologists-should-care-about-the-gut-microbiome">Read more</a> </span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="100" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><img class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; margin: 0px; padding-left: 0px !important;" src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/GettyImages-641696392_opt.jpg"
+                                                                        alt="" width="150" height="100" align="" border="0" /></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="item" border="0" width="400" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0"><strong><a style="text-decoration: none!important; color: #008FD4;" href="http://www.gastro.org/news_items/dna-and-small-molecule-based-methods-for-analyzing-microbiomes">DNA and Small Molecule-Based Methods for Analyzing Microbiomes</a></strong></td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="140"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">Rob Knight, PhD, with two of his colleagues, provides insight into techniques for assaying the microbiome via DNA sequencing, and explains how these approaches are being used to better understand the gut microbiota ecosystem. <a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/news_items/dna-and-small-molecule-based-methods-for-analyzing-microbiomes">Read more</a> </span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">News from the AGA Center</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="100" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><img class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; margin: 0px; padding-left: 0px !important;" src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/GettyImages-476147671.jpg"
+                                                                        alt="" width="150" height="100" align="" border="0" /></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="item" border="0" width="400" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0"><a style="text-decoration: none!important; color: #008FD4;" href="http://www.gastro.org/news_items/noteworthy-microbiome-sessions-at-ddw-2017">Noteworthy Microbiome&nbsp;<strong>Sessions at DDW&reg; 2017</strong></a></td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="73"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">Mark your DDW calendar for these gut microbiome-focused sessions, featuring leading experts in the field.&nbsp;<a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/news_items/noteworthy-microbiome-sessions-at-ddw-2017">Learn more</a> </span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">Advisory Board Members in the News</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">&ldquo;<a style="text-decoration: none!important; color: #008FD4;" href="https://www.technologyreview.com/s/603900/gut-check-scientists-are-wary-of-at-home-microbiome-tests/">Gut Check: Scientists are Wary of At-Home Microbiome Tests</a>&rdquo;</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="90"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">March 2017<br />
+                                            Featuring&nbsp;Gary D. Wu, MD, and Rob Knight, PhD <br>
+                                        <a style="text-decoration: none!important; color: #008FD4;" href="https://www.technologyreview.com/s/603900/gut-check-scientists-are-wary-of-at-home-microbiome-tests/"><em>MIT Technology Review</em></a></span>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">&ldquo;<a style="text-decoration: none!important; color: #008FD4;" href="http://nymag.com/thecut/2017/02/kombucha-does-fermented-tea-really-have-health-benefits.html">Should I Be Drinking Kombucha?</a>&rdquo;</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="90"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">February 2017<br />
+                                            Featuring Gail A. Hecht, MD, MS, AGAF<br />
+                                            <a style="text-decoration: none!important; color: #008FD4;" href="http://nymag.com/thecut/2017/02/kombucha-does-fermented-tea-really-have-health-benefits.html"><em>The Cut by New York Magazine</em></a>&nbsp;</span></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">&ldquo;<a style="text-decoration: none!important; color: #008FD4;" href="http://dailyburn.com/life/health/gut-health-benefits-tips-improve/">How Healthy Is Your Gut? Here's How to Tell</a>&rdquo;</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="90"><span style="color: #000000; font-size: 16px; padding-left: 10px!important; display: block;">January 2017<br/>
+                                            Featuring&nbsp;Purna Kashyap, MBBS<br />
+                                            <a style="text-decoration: none!important; color: #008FD4;" href="http://dailyburn.com/life/health/gut-health-benefits-tips-improve/"><em>Daily Burn</em></a><br />
+                                            </span></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+
+
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">Notable Gut Microbiome Publications</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">From AGA's Journals</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="110">Kelly CR, Kim AM, Laine L, Wu GD. <strong>The AGA&rsquo;s fecal microbiota transplantation national registry: an important step toward understanding risks and benefits of microbiota therapeutics.</strong>                                                    <em>Gastroenterology</em> 152(4):681-684, 2017. <a style="text-decoration: none!important; color: #008FD4; word-break: break-all;" href="http://www.gastrojournal.org/article/S0016-5085(17)30088-4/abstract">http://www.gastrojournal.org/article/S0016-5085(17)30088-4/abstract</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px;" width="598">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="110">Bouter KE, van Raalte DH, Groen AK, Nieuwdorp M. <strong>Role of the gut microbiome in the pathogenesis of obesity and obesity-related metabolic dysfunction.</strong> <em>Gastroenterology</em>. Published
+                                                    online 2017 Feb 10. <a style="text-decoration: none!important; color: #008FD4; word-break: break-all;" href="http://www.gastrojournal.org/article/S0016-5085(17)30141-5/abstract">http://www.gastrojournal.org/article/S0016-5085(17)30141-5/abstract</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="140">
+                                                    Shen NT, Maw A, Tmanova LL, Pino A, Ancy K, Crawford CV, Simon MS, Evans AT. <strong>Timely use of probiotics in hospitalized adults prevents clostridium difficile infection: a systematic review with meta-regression analysis.</strong>                                                        <em>Gastroenterology</em>. Published online 2017 Feb 10. <a style="text-decoration: none!important; color: #008FD4; word-break: break-all;" href="http://www.gastrojournal.org/article/S0016-5085(17)30136-1/abstract">http://www.gastrojournal.org/article/S0016-5085(17)30136-1/abstract</a>
+
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+
+
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;"><span style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;">From Our Scientific Advisory Board</span></td>
+                                            </tr>
+
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="80">Martinez KB, Leone V, Chang EB. <strong>Western diets, gut dysbiosis, and metabolic diseases: Are they linked?</strong> <em>Gut Microbes</em>. 2017 Mar;23(3):366-378.&nbsp;<a style="text-decoration: none!important; color: #008FD4; word-break: break-all;"
+                                                        href="http://www.tandfonline.com/doi/full/10.1080/19490976.2016.1270811">http://www.tandfonline.com/doi/full/10.1080/19490976.2016.1270811</a>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                        <tbody>
+
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="130">Halfvarson J, Brislawn CJ, Lamendella R, V&aacute;zquez-Baeza Y, Walters WA, Bramer LM, D'Amato M, Bonfiglio F, McDonald D, Gonzalez A, McClure EE, Dunklebarger MF, Knight R, Jansson JK. <strong>Dynamics of the human gut microbiome in inflammatory bowel disease.</strong>                                                    <em>Nat Microbiol</em>. Published online 2017 Feb 13. <a style="text-decoration: none!important; color: #008FD4; word-break: break-all;" href="https://www.nature.com/articles/nmicrobiol20174">https://www.nature.com/articles/nmicrobiol20174</a>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                        <tbody>
+
+                                            <tr valign="top">
+                                            <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="120">Hoffmann DE, Palumbo FB, Ravel J, Rowthorn V, von Rosenvinge E. <strong>A proposed definition of microbiota transplantation for regulatory purposes.</strong> <em>Gut Microbes</em>. 2017 Mar 20:1-6.
+                                                <a style="text-decoration: none!important; color: #008FD4; word-break: break-all;" href="http://www.tandfonline.com/doi/full/10.1080/19490976.2017.1293223">http://www.tandfonline.com/doi/full/10.1080/19490976.2017.1293223</a>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">Gut Microbiome Resources</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">Gut Microbiota for Health World Summit</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="60">Watch the video replay of the 2017 summit, which took place March 11-12 in Paris, France.&nbsp;<a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/news_items/new-on-demand-gut-microbiota-education-now-available">Learn more</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">AGA Institute Clinical Practice Update</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="60">Review this expert advice on the management of <em>Clostridium difficile</em>&nbsp;infection in inflammatory bowel disease.&nbsp;<a style="color: #008fd4; text-decoration: none;" href="http://www.cghjournal.org/article/S1542-3565(16)30989-2/fulltext">Learn more</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">From AGA's <em>Patient</em>INFO Center</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0">Patient Info on FMT</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="60">Provide this resource to your patients who are considering this procedure for the treatment of <em>C. difficile&nbsp;</em>infection.&nbsp;<a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/info_for_patients/clostridium-difficile-106-fmt-details">Learn more</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" width="600">
+                                        <tbody>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #0a5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" align="left" valign="top" width="100%" height="0"><em>C. difficile</em> Resources</td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" align="left" valign="top" width="100%" height="30">Information and resources will help you care for your patients. <a style="color: #008fd4; text-decoration: none;" href="http://www.gastro.org/patient-care/conditions-diseases/clostridium-difficile-infection">Learn more</a></td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+                                    <!-- *-===== section break =====-* -->
+                                    <table class="item" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="item" border="0" width="" cellspacing="0" cellpadding="0" align="left">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td class="content" style="color: #2c292e; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 20px 0 10px 0;" align="left" valign="top" width="100%" height="0"><span style="color: #2c292e; font-size: 28px;">Acknowledgement</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!-- [if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+
+
+
+
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                    	<tbody>
+                                    		<tr>
+                                    			<td style="color: #000000; background-color: #ffffff; border: 2px solid #009FD4; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 10px!important;">
+                                    				<table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                    					<tbody>
+                                    						<tr>
+                                    							<td width="20%" height="73"><img width="150" height="100" border="0" class="resize" alt="Dannon" style="display: block; width: 150px; height: 100px; padding-right: 20px;margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" src="https://s3.amazonaws.com/agaemailassets/images/Dannonlogo_preferred.jpg"/></td>
+                                    						</tr>
+                                    					</tbody>
+                                    				</table>
+                                    				<table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                    					<tbody>
+                                    						<tr valign="top">
+                                    							<td width="100%" valign="top" align="left" height="73" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;">
+                                    								<span style="color: #000000; font-size: 16px; padding-left:10px!important; display:block;">
+                                                                        <em>AGA Microbiome Update&nbsp;is supported by an unrestricted educational grant from The Dannon Company, Inc.</em>
+                                    								</span>
+                                    							</td>
+                                    						</tr>
+                                    					</tbody>
+                                    				</table>
+                                    			</td>
+                                    		</tr>
+                                    		<!-- *-------===== mso spacer =====-------* -->
+                                    		<tr>
+                                    			<!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    		</tr>
+                                    		<!-- *-------=====/mso spacer =====-------* -->
+                                    	</tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+
+
+
+
+
+
+                                    <!-- *= /CONTENT goes above this =* -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%% footer %%* -->
+                    <table class="item" style="width: 700px;" border="0" width="700" cellspacing="0" cellpadding="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td class="item" style="padding: 10px 35px 10px 35px;" align="left" valign="top" bgcolor="#2c292e">
+                                    <table class="item" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="block" style="padding: 27px 30px 27px 0;" align="left" valign="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 10px 12px 0 0;" align="left" valign="top">
+                                                                    <a href="http://www.gastro.org/"><img style="display: block;" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png" alt="American Gastroenterological Association" width="72" height="72" border="0"
+                                                                        /></a>
+                                                                </td>
+                                                                <td style="color: #a9a9a9; font-family: Arial,sans-serif; font-size: 13px; line-height: 16px;" align="left" valign="center">
+                                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td style="padding: 10px 5px 10px 10px;"><img style="display: block; border: none;" src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" alt="" width="13" height="25" /></td>
+                                                                                <td style="padding: 0 0 0 10px;"><span class="ioslinks" style="color: #ffffff; font-family: Arial,sans-serif;">301-654-2055</span></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="padding: 10px 5px 10px 10px;"><img style="display: block; border: none;" src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" alt="" width="13" height="25" /></td>
+                                                                                <td style="padding: 0 0 0 10px;"><span class="ioslinks" style="color: #ffffff; font-family: Arial,sans-serif;">4930 Del Ray Ave. Bethesda, MD 20814</span></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="block" style="color: #a9a9a9; font-family: Arial, sans-serif; font-size: 24px; line-height: 23px;" align="left" valign="center">
+                                                    <!-- [if mso]>
+                        <font face="Helvetica, sans-serif"><![endif]-->Stay Connected
+                                                    <!-- [if mso]></font><![endif]-->
+                                                    <table class="social" border="0" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding: 20px 5px 0 0;" align="left" valign="top">
+                                                                    <a href="https://www.facebook.com/AmerGastroAssn"><img style="display: block;" src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" alt="Facebook" width="55" height="54" border="0" /></a>
+                                                                </td>
+                                                                <td style="padding: 20px 5px 0 0;" align="left" valign="top">
+                                                                    <a href="https://www.linkedin.com/groups/915257"><img style="display: block;" src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" alt="Instagram" width="55" height="54" border="0" /></a>
+                                                                </td>
+                                                                <td style="padding: 20px 5px 0 0;" align="left" valign="top">
+                                                                    <a href="https://www.youtube.com/user/AmerGastroAssn"><img style="display: block;" src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" alt="YouTube" width="55" height="54" border="0" /></a>
+                                                                </td>
+                                                                <td style="padding: 20px 5px 0 0;" align="left" valign="top">
+                                                                    <a href="https://twitter.com/AmerGastroAssn"><img style="display: block;" src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" alt="Twitter" width="55" height="54" border="0" /></a>
+                                                                </td>
+                                                                <td style="padding: 20px 0 0 0;" align="left" valign="top">
+                                                                    <a href="http://community.gastro.org"><img style="display: block;" src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif" alt="Community" width="55" height="54" border="0" /></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="item" style="padding: 32px 29px 32px 35px;" align="left" valign="top" bgcolor="#1e1c20">
+                                    <table class="item" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 10px; line-height: 20px;" align="left" valign="top">Copyright &copy; American Gastroenterological Association&nbsp;&bull;&nbsp;To opt out of AGA emails, change your <a style="text-decoration: none; color: #008fd4;" href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%"> email preferences</a>.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%% /footer %%* -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

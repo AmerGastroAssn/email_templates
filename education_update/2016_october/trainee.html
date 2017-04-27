@@ -1,0 +1,990 @@
+<!doctype html>
+<html data-ember-extension="1">
+    <head>
+    <title>Version A</title>
+    <style type="text/css">
+        table.wrapper {
+        }
+
+        img.resize {
+        }
+
+        .item {
+        }
+
+        .item img {
+        }
+
+        .item img.disappear {
+        }
+
+        .item img.noresize {
+        }
+
+        .item1 {
+        }
+
+        .item1 {
+            width: 310px !important;
+        }
+
+        .item1 {
+            width: 480px !important;
+        }
+
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
+            line-height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a:link {
+            text-decoration: none !important; color: #008FD4;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687 !important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: #0A5687 !important;
+            text-decoration: underline;
+        }
+
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4 !important;
+        }
+
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        table td,
+        table tr {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
+        }
+
+        #preheader {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 480px) {
+            table.item {
+                border-spacing: 0px;
+            }
+
+            table.wrapper {
+                width: 310px !important;
+            }
+
+            td#main {
+                padding-top: 0 !important;
+            }
+
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+
+            .item {
+                width: 310px !important;
+            }
+
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+
+            tr td#header.item {
+                padding: 10px 10px 0 10px !important;
+            }
+
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+
+            .content {
+                padding: 0 10px !important;
+            }
+
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0px !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            #account {
+                padding: 0 !important;
+            }
+
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.item {
+                border-spacing: 0px;
+            }
+
+            table.wrapper {
+                width: 480px !important;
+            }
+
+            td#main {
+                padding-top: 0 !important;
+            }
+
+            img.resize {
+                width: 480px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+
+            .item {
+                width: 480px !important;
+            }
+
+            /*.item img {width: 480px !important;  height: auto !important;}
+                  .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+
+            .content {
+                padding: 0 10px !important;
+            }
+
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0px !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            #account {
+                padding: 0 !important;
+            }
+
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+        <div id="preheader"><singleline label="PreHeader">                 <span style="display: none !important; font-size: 0px; color: #EAEEEF;">Abstract submission opens Oct. 20.</span>             </singleline></div>
+        <!-- *%%%%%%%=== /Preheader ===%%%%%%%* --> <!-- *-===== View Online =====-* -->
+        <table style="margin-top:5px; background-color: #FFFFFF;" class="wrapper" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>
+            <tr bgcolor="#FFFFFF">
+                <td height="6"></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#FFFFFF" align="center">Trouble viewing this message?                     <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td height="6"></td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            </tbody>
+        </table>
+        <!-- *-===== /View Online =====-* -->
+        <table style="margin-top:5px; background-color: #EAEEEF;" class="wrapper" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+            <!-- *-===== Header =====-* -->
+            <tbody>
+            <tr>
+                <td style="background-color: #ffffff; padding: 20px 0 !important; text-align: center;" align="center"><!-- ********TABLE**********-->
+                    <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <table class="socialicons" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <td width="150" align="left"></td>
+                                        <td><img alt="" src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" /></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+                    <table style="padding: 5px; width: 100px; text-align: center;" class="item" id="forward-btn" valign="top" width="100" cellspacing="0" cellpadding="0" border="0" align="right">
+                        <tbody>
+                        <tr>
+                            <td width="80"><a href="%%SSL_FORWARDTHIS%%">                                 <img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward" style="width: 80px;" />                             </a></td>
+                            <!--<td><a href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* --></td>
+            </tr>
+            <!-- #######-===== row =====-####### -->
+            <tr>
+                <td style="background-color: #ffffff; padding: 0!important; text-align: center;" align="center"><!-- ********TABLE**********-->
+                    <table class="item" width="10" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                        <tr>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->       <!-- ********TABLE**********-->
+                    <table class="item" width="500" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                        <tr>
+                            <td style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; background-color: #ffffff; vertical-align: top; padding:0 20px!important; text-align:left;" class="item">
+                                <p>AGA Education Update &ndash; GI Fellow Edition</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->       <!-- ********TABLE**********-->
+                    <table class="item" width="240" cellspacing="0" cellpadding="0" border="0" align="right">
+                        <tbody>
+                        <tr>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->       <!-- ********TABLE**********-->
+                    <table class="item" width="20" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                        <tr>
+                            <td class="item" width="10" height="1"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********--></td>
+            </tr>
+            <!-- *-------=====/Header =====-------* -->   <!-- *-------=====/Header =====-------* -->   <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <tr>
+                <td style="padding: 0!important; text-align: center;" class="item" align="left"><a href="http://www.ddw.org/abstracts"><img style="margin: 0px;" class="resize" alt="Image" src="http://i63.tinypic.com/21eed.png" width="700" height="293" border="0" align="top" /></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="item" width="698" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <!-- *-------===== mso spacer =====-------* -->
+                        <tbody>
+                        <tr>
+                            <!--[if mso]>
+                            <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                        </tr>
+                        <!-- *-------=====/mso spacer =====-------* -->
+                        <tr>
+                            <!--<td align="left" width="15">-->           <!--<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />-->           <!--</td>-->
+                            <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0;" class="item" id="main" width="100" align="center"><!-- Content -->               <!-- *-===== story =====-* -->
+                                <table style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0;" class="item" width="600">
+                                    <tbody>
+                                    <tr valign="top">
+                                        <td style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" class="content" width="100%" valign="top" height="0" align="left"><span style="font-size: 18px; font-weight: bold;"><a href="http://www.ddw.org/abstracts" style="text-decoration: none !important; color: #008FD4;">DDW&reg; 2017 Call for Abstracts</a></span></td>
+                                    </tr>
+                                    <tr valign="top">
+                                        <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 500px; padding-top:10px;" class="content" width="100%" valign="top" height="70" align="left">Unveil your cutting-edge research at the first and foremost event in the world for GI, hepatology, endoscopy and GI surgery. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.ddw.org/home">Digestive Disease Week&reg; 2017</a> abstract submission opens tomorrow, Oct. 20 and will close on Dec. 1. Take advantage of this opportunity for a chance to present your research in front of more than 14,000 attendees and to be published online in leading GI journals. Society membership is not required. Visit the <a style="text-decoration: none !important; color: #008FD4;" href="http://www.ddw.org/abstracts">DDW website</a> for a step-by-step guide to submitting an abstract, important dates and more. <br />
+                                            <br />
+                                            DDW will be awarding up to 20 young investigators with the Basic Science Travel Award. Slected authors of basic science abstracts will receive $1,000 travel grant along with recognition at a reception during DDW 2017. Residents and fellows are encouraged to apply.<br />
+                                            <br />
+                                            <a style="text-decoration: none !important; color: #008FD4;" href="http://www.ddw.org/hostcity">Join us in Chicago</a> for DDW, May 6&ndash;9, 2017. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.ddw.org/home">Learn more</a>.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --> <br />
+                                <!-- *-===== special blue section =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px 0!important; margin: 20px;" class="item" width="100" align="center">
+                                                        <p style="text-align: left; background-color: #ffffff; color: #000000; padding: 25px; margin:0px; border: solid 2px #008FD4;"><span style="color:#0A5687; font-weight:bold; font-size:18px;"> <a href="http://buyddsep8.gastro.org/chapters" style="text-decoration: none !important; color: #008FD4;">DDSEP&reg; 8 &ndash; Everything You Need to Succeed</a></span>                                                     <br />
+                                                            Customize your learning experience by purchasing individual DDSEP 8 chapters and master the content most important to  you. <a style="text-decoration: none !important; color: #008FD4;" href="http://buyddsep8.gastro.org/chapters">Learn more</a>.</p>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /special blue section =====-* -->                                                   <!-- *-===== section break =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;" width="100%" valign="top" height="0" align="left"><span style="color: #2C292E; font-size: 28px;"><br />
+                                                        Upcoming Meetings</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /section break =====-* --><!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://ddc.gastro.org"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i68.tinypic.com/rmo8ba.jpg" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://ddc.gastro.org" style="text-decoration: none !important; color: #008FD4;">AGA Drug Development Conference: Clinical Endpoints in Upper GI Disorders</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 500px;" width="100%" valign="top" height="29" align="left"><span style="color: #000000; font-size: 16px; padding-left:10px!important;">Oct. 27&ndash;28, 2016 | Washington, DC</span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="120" align="left"><span style="padding-left:10px!important; display:block;">Join the AGA Center for Diagnostics and Therapeutics (CDT) to discuss where we are now and what the future holds for the diagnosis and treatment of upper GI disorders. <a style="text-decoration: none !important; color: #008FD4;" href="http://ddc.gastro.org">Learn more</a>. </span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->  <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.naccme.com/program/2016-714-3"><img src="http://i66.tinypic.com/2iqoexg.jpg" alt="" class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://www.naccme.com/program/2016-714-3" style="text-decoration: none !important; color: #008FD4;">Advancing IBD Practice in Our Communities: A Focus on Evidence-Based Care</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 500px;" width="100%" valign="top" height="29" align="left">
+                                                        <p style="color: #000000; font-size: 16px; padding-left:10px!important;">Nov. 29, 2016 | New York, NY</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="120" align="left"><span style="padding-left:10px!important; display:block;">Join IBD experts for a free dinner presentation,  at Morton&rsquo;s The Steakhouse, focusing on incorporating the latest evidence-based advances in IBD care into your practice. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.naccme.com/program/2016-714-3">Learn more</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->                      <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.rmei.com/GImeetings"><img src="http://i63.tinypic.com/2ikcom.png" alt="" class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://www.rmei.com/GImeetings" style="text-decoration: none !important; color: #008FD4;">Challenging Cases in IBD &mdash; The Gastroenterology Pathway: Achieving Success in IBD Management</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 500px;" width="100%" valign="top" height="29" align="left">
+                                                        <p style="color: #000000; font-size: 16px; padding-left:10px!important;">Dec. 15, 2016 | New York, NY&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="120" align="left"><span style="padding-left:10px!important; display:block;">Join IBD experts for a free program comparing and contrasting the latest IBD therapies and discussing recommendations for individualized treatments that improve long-term outcomes for your patients.<a href="http://www.rmei.com/GImeetings" style="text-decoration: none !important; color: #008FD4;"> Learn more</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->                                           <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.gastro.org/education?search_by_content_type=&tag_select=&with_moc_ponts=&with_cme_credits=&search_term=&series_id=18"><img src="http://i65.tinypic.com/14j2pug.jpg" alt="" class="resize" style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://www.gastro.org/education?search_by_content_type=&tag_select=&with_moc_ponts=&with_cme_credits=&search_term=&series_id=18" style="text-decoration: none !important; color: #008FD4;">AGA Regional Practice Skills Workshops</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 500px;" width="100%" valign="top" height="29" align="left">
+                                                        <p style="color: #000000; font-size: 16px; padding-left:10px!important;">Various Locations</p>
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="120" align="left"><span style="padding-left:10px!important; display:block;">Designed for trainees, these unique workshops offer helpful insight from senior and junior GIs on developing a successful career in gastroenterology. You'll explore topics such as employment models, contracts, compliance and how MACRA is shaping the GI field. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.gastro.org/education?search_by_content_type=&tag_select=&with_moc_ponts=&with_cme_credits=&search_term=&series_id=18">Register for a workshop near you</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->                                                                                <!-- *-===== special blue section =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100%" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px 0!important; margin: 20px;" class="item" width="100" align="center">
+                                                        <p style="text-align: left; background-color: #ffffff; color: #000000; padding: 25px; margin:0px; border: solid 2px #008FD4;"><span style="color:#0A5687; font-weight:bold; font-size:18px;"> <a href="https://www.healthecareers.com/aga/search-jobs/" style="text-decoration: none !important; color: #008FD4;">Looking Ahead &mdash; What's After GI Training?</a></span>                                                     <br />
+                                                            Sign up for timely tips, expert advice and updates specific to GI at <a style="text-decoration: none !important; color: #008FD4;" href="https://www.healthecareers.com/aga/search-jobs/">GICareerSearch.com</a>, AGA Institute&rsquo;s official job board.</p>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /special blue section =====-* -->                                                                                           <!-- *-===== section break =====-* -->
+                                <table style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" class="item" width="600" align="center">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;" class="content" width="100%" valign="top" height="0" align="left"><span style="color: #2C292E; font-size: 28px;">On-Demand Education</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /section break =====-* -->    <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="https://www.med-iq.com/gastroenterology/free-cme-course/ibs-d-treatment-incorporating-effective-strategies-in-a-new-era.html"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i68.tinypic.com/2ik8hlw.jpg" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="https://www.med-iq.com/gastroenterology/free-cme-course/ibs-d-treatment-incorporating-effective-strategies-in-a-new-era.html" style="text-decoration: none !important; color: #008FD4;">IBS-D Treatment: Incorporating Effective Strategies in a New Era</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">This free e-publication provides clinical evidence and expert insight to help clinicians better diagnose patients with IBS-D and incorporate the use of new agents into clinical practice. <a href="https://www.med-iq.com/gastroenterology/free-cme-course/ibs-d-treatment-incorporating-effective-strategies-in-a-new-era.html" style="text-decoration: none !important; color: #008FD4;">Start gaining insight</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --> <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.mycme.com/oic-house-calls-case-clinic/section/6056/"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i64.tinypic.com/3499wyu.jpg" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://www.mycme.com/oic-house-calls-case-clinic/section/6056/" style="text-decoration: none !important; color: #008FD4;">Understanding and Managing Opioid-Induced Constipation</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">View free webcasts to enhance your recognition and management of opioid-induced constipation, and to help you better implement clinical and communications strategies into clinical practice. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.mycme.com/oic-house-calls-case-clinic/section/6056/">View now</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->                                      <!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.med-iq.com/gastroenterology/free-cme-course/practical-takeaways-from-the-agas-ulcerative-colitis-care-pathway.html"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i68.tinypic.com/2s84vlt.png" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://www.med-iq.com/gastroenterology/free-cme-course/practical-takeaways-from-the-agas-ulcerative-colitis-care-pathway.html" style="text-decoration: none !important; color: #008FD4;">Practical Takeaway's from AGA's UC Care Pathway </a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">Get the latest practice guidelines on a systematic approach for managing patients with ulcerative colitis. This activity is supported by an educational grant from Takeda Pharmaceuticals, U.S.A, Inc. <a style="text-decoration: none !important; color: #008FD4;" href="http://www.med-iq.com/gastroenterology/free-cme-course/practical-takeaways-from-the-agas-ulcerative-colitis-care-pathway.html">Get started</a>. </span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --><!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://www.patienttalkpoints.com/hcv-treatment/"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i64.tinypic.com/2v0ec90.jpg" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a style="text-decoration: none !important; color: #008FD4;" href="http://www.patienttalkpoints.com/hcv-treatment/">Patient TalkPoints: Learn More About HCV Treatment</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">In this short video, experts discuss recent clinical evidence about available therapies and cutting-edge science in easy-to-understand language for hepatitis C patients who desire a more in-depth understanding about the treatment of HCV.  <a style="text-decoration: none !important; color: #008FD4;" href="http://www.patienttalkpoints.com/hcv-treatment/">Learn more</a>. </span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --><!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="http://pgcourse.gastro.org/home"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="http://i63.tinypic.com/vessc6.jpg" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="http://pgcourse.gastro.org/home" style="text-decoration: none !important; color: #008FD4;">Flexible Learning with the 2016 AGA PG Course Resources</a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">Remain knowledgeable of the newest medical advances and enhance your professional aptitude with the 2016 AGA Postgraduate Course Resources. This course provides GI updates to help you make better decisions for your patients and improve your practice. Invest in your education and patient care by <a style="text-decoration: none !important; color: #008FD4;" href="http://pgcourse.gastro.org/home">placing your order today</a>.</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --><!-- *-===== story =====-* -->
+                                <table class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;" width="600" align="center">
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tbody>
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    <tr>
+                                        <td>
+                                            <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr>
+                                                    <td width="20%" height="73"><a href="https://primeinc.org/54WB165?s=aga"><img style="display: block; width: 150px; height: 100px; padding-right: 20px; !important; margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;" class="resize" alt="" src="https://s3.amazonaws.com/agaemails/education_update/payer_provider.jpg" width="150" height="100" border="0" /></a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="item" width="400" cellspacing="0" cellpadding="0" border="0" align="left">
+                                                <tbody>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;" width="100%" valign="top" height="0" align="left"><span style="color: #0A5687; font-size: 18px; font-weight:bold; padding-left:10px!important; display:block;"><a href="https://primeinc.org/54WB165?s=aga" style="text-decoration: none !important; color: #008FD4;">Payer and Provider Discussions to Overcome Barriers in Evidence-Based Treatment Decisions in HCV and IBD </a></span></td>
+                                                </tr>
+                                                <tr valign="top">
+                                                    <td class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;" width="100%" valign="top" height="110" align="left"><span style="padding-left:10px!important; display:block;">Learn how to bridge gaps across payer and provider settings in making treatment and policy decisions for patients with HCV and/or IBD. This free online, on-demand program offers 1.0 CME.<a href="https://primeinc.org/54WB165?s=aga" style="text-decoration: none !important; color: #008FD4;"> Learn more</a></span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- *-------===== mso spacer =====-------* -->
+                                    <tr>
+                                        <!--[if mso]>
+                                        <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                    </tr>
+                                    <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->                                                                                                                                                                                                     <!-- /Content --></td>
+                            <!--<td align="left" width="15">-->           <!--<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />-->           <!--</td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->              <!-- ******** FOOTER **********-->
+            </tbody>
+        </table>
+        <table style="width:700px;" class="item" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+            <tbody>
+            <tr>
+                <td style="padding:10px 35px 10px 35px;" class="item" valign="top" bgcolor="#2c292e" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td style="padding:27px 30px 27px 0;" class="block" valign="center" align="left">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <td style="padding:0 12px 0 0;" valign="top" align="left"><a href="http://www.gastro.org/"><img style="display:block;" alt="American Gastroenterological Association" src="http://www.highroadsolution.com/clients/aga/edigest/images/AGA+seal.png" width="72" height="72" border="0" /></a></td>
+                                        <td style="color:#a9a9a9;font-family:Arial,sans-serif;font-size:13px;line-height:16px;" valign="center" align="left">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="padding:10px 5px 10px 10px;"><img style="display:block;border:none;" alt="" src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" width="13" height="25" /></td>
+                                                    <td style="padding:0 0 0 10px;"><span class="ioslinks" style="color:#ffffff; font-family:Arial,sans-serif;">301-654-2055</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:10px 5px 10px 10px;"><img style="display:block;border:none;" alt="" src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" width="13" height="25" /></td>
+                                                    <td style="padding:0 0 0 10px;"><span class="ioslinks" style="color:#ffffff; font-family:Arial,sans-serif;">4930 Del Ray Ave. Bethesda, MD 20814</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td style="color:#a9a9a9;font-family:Arial, sans-serif;font-size:24px;line-height:23px;" class="block" valign="center" align="left"><!--[if mso]>
+                                <font face="Helvetica, sans-serif"><![endif]-->Stay Connected<!--[if mso]></font><![endif]-->
+                                <table class="social" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.facebook.com/AmerGastroAssn"><img style="display:block;" alt="Facebook" src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" width="55" height="54" border="0" /></a></td>
+                                        <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.linkedin.com/groups/915257"><img style="display:block;" alt="Instagram" src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" width="55" height="54" border="0" /></a></td>
+                                        <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.youtube.com/user/AmerGastroAssn"><img style="display:block;" alt="YouTube" src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" width="55" height="54" border="0" /></a></td>
+                                        <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://twitter.com/AmerGastroAssn"><img style="display:block;" alt="Twitter" src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" width="55" height="54" border="0" /></a></td>
+                                        <td style="padding: 20px 0 0 0;" valign="top" align="left"><a href="http://community.gastro.org"><img style="display:block;" alt="Community" src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif" width="55" height="54" border="0" /></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:32px 29px 32px 35px;" class="item" valign="top" bgcolor="#1e1c20" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                        <tr>
+                            <td style="color:#ffffff;font-family:Arial, sans-serif;font-size:10px;line-height:20px;" valign="top" align="left">Copyright &copy; American Gastroenterological Association&nbsp;&bull;&nbsp;To opt out of AGA emails, change your                                     <a style="text-decoration: none; color: #008FD4;" href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%"> email preferences</a>.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <!-- ******** END FOOTER **********-->                                <!-- *-------===== external css =====-------* -->
+        <link href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" rel="stylesheet" />
+    </body>
+</html>

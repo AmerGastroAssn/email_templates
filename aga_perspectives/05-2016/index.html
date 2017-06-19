@@ -1,0 +1,1207 @@
+<!doctype html>
+<html data-ember-extension="1">
+    <head>
+        <title>Perspectives</title>
+        <style type="text/css">
+		table.wrapper {}
+
+		img.resize {}
+
+		.item {}
+
+		.item img {}
+
+		.item img.disappear {}
+
+		.item img.noresize {}
+		/* Reset Styles */
+		/* Add 100px so mobile switch bar doesn't cover street address. */
+
+		body {
+			background-color: #ffffff;
+			color: #000000;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+		}
+
+		br,
+		strong br,
+		b br,
+		em br,
+		i br {
+			line-height: 100%;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			line-height: 100% !important;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		ul {
+			text-align: left;
+		}
+
+		a:link {
+			text-decoration: none !important;	color: #008FD4 !important;
+		}
+
+		h1 a,
+		h2 a,
+		h3 a,
+		h4 a,
+		h5 a,
+		h6 a {
+			color: #0A5687!important;
+		}
+
+		h1 a:active,
+		h2 a:active,
+		h3 a:active,
+		h4 a:active,
+		h5 a:active,
+		h6 a:active {
+			color: #0A5687!important;
+			text-decoration: underline;
+		}
+		/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+		h1 a:visited,
+		h2 a:visited,
+		h3 a:visited,
+		h4 a:visited,
+		h5 a:visited,
+		h6 a:visited {
+			color: #008FD4 !important;
+		}
+		/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+		table td,
+		table tr {
+			border-collapse: collapse;
+		}
+
+		.yshortcuts,
+		.yshortcuts a,
+		.yshortcuts a:link,
+		.yshortcuts a:visited,
+		.yshortcuts a:hover,
+		.yshortcuts a span {
+			color: black;
+			text-decoration: none !important;
+			border-bottom: none !important;
+			background: none !important;
+		}
+		/* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+		/* Preheader */
+
+		span.preheader {
+			display: none !important;
+		}
+
+		#preheader {
+			display: none !important;
+		}
+
+		@media screen and (max-width: 480px) {
+			table.item {
+				border-spacing: 0px;
+			}
+			table.wrapper {
+				width: 310px !important;
+			}
+			td#main {
+				padding-top: 0!important;
+			}
+			img.resize {
+				width: 310px !important;
+				height: auto !important;
+				padding-right: 0!important;
+			}
+			.item {
+				width: 310px !important;
+			}
+			tr > td.content {
+				padding: 0 5px 10px 10px !important;
+			}
+			tr td#header.item {
+				padding: 10px 10px 0 10px !important;
+			}
+			/*.item img {width: 310px !important;  height: auto !important;}*/
+			/*.item img.noresize {width: inherit !important;}*/
+			.item img.disappear {
+				display: none !important;
+			}
+			.logotext {
+				display: none;
+			}
+			td#seal {
+				padding: 0px!important;
+			}
+			#forward-btn {
+				max-width: 100px;
+			}
+			/* footer */
+			td.block {
+				display: block !important;
+				padding: 10px!important;
+			}
+			#account {
+				padding: 0 !important;
+			}
+			td.social-footer {
+				padding: 0 0.5em !important;
+			}
+			td.logo-footer {
+				padding: 0 0 0 10px!important;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 699px) {
+			table.item {
+				border-spacing: 0px;
+			}
+			table.wrapper {
+				width: 480px !important;
+			}
+			td#main {
+				padding-top: 0!important;
+			}
+			img.resize {
+				width: 480px !important;
+				height: auto !important;
+				padding-right: 0!important;
+			}
+			.item {
+				width: 480px !important;
+			}
+			tr > td.content {
+				padding: 0 5px 10px 10px !important;
+			}
+			/*.item img {width: 480px !important;  height: auto !important;}
+            .item img.noresize {width: inherit !important;}*/
+			.item img.disappear {
+				display: none !important;
+			}
+			.logotext {
+				display: none;
+			}
+			td#seal {
+				padding: 0px!important;
+			}
+			#forward-btn {
+				max-width: 100px;
+			}
+			/* footer */
+			td.block {
+				display: block !important;
+				padding: 10px!important;
+			}
+			#account {
+				padding: 0 !important;
+			}
+			td.social-footer {
+				padding: 0 0.5em !important;
+			}
+			td.logo-footer {
+				padding: 0 0 0 10px!important;
+			}
+		}
+	</style>
+    </head>
+    <body>
+        <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+        <div id="preheader"><singleline label="PreHeader"> <span style="display: none !important; font-size: 0px; color: #FFFFFF;">New AGA Perspectives issue available.</span> </singleline></div>
+        <!-- *%%%%%%%=== /Preheader ===%%%%%%%* --> 	<!-- *-===== View Online =====-* -->
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:5px; background-color: #FFFFFF;" class="wrapper">
+            <tbody>
+                <tr bgcolor="#FFFFFF">
+                    <td height="6"></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                    <td bgcolor="#FFFFFF" align="center" style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Trouble viewing this message? <a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="%%VIEWONLINE%%">View it online.</a></td>
+                </tr>
+                <tr bgcolor="#FFFFFF">
+                    <td height="6"></td>
+                </tr>
+                <!-- *-------===== mso spacer =====-------* -->
+                <tr>
+                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+                </tr>
+                <tr>
+                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+                </tr>
+                <!-- *-------=====/mso spacer =====-------* -->
+            </tbody>
+        </table>
+        <!-- *-===== /View Online =====-* -->
+        <table width="700" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:5px; background-color: #EAEEEF;" class="wrapper">
+            <!-- *-===== Header =====-* -->
+            <tbody>
+                <tr>
+                    <td align="center" style="background-color: #ffffff; padding: 20px 0 !important; text-align: center;"><!-- ********TABLE**********-->
+                    <table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                        <tbody>
+                            <tr>
+                                <td>
+                                <table cellspacing="0" cellpadding="0" border="0" class="socialicons">
+                                    <tbody>
+                                        <tr>
+                                            <td width="150" align="left"></td>
+                                            <td><img width="15" height="15" alt="" src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+                    <table width="100" cellspacing="0" cellpadding="0" border="0" align="right" style="padding: 5px; width: 100px; text-align: center;" class="item" id="forward-btn" valign="top">
+                        <tbody>
+                            <tr>
+                                <td width="80"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="%%SSL_FORWARDTHIS%%"> <img style="width: 80px;" alt="Forward" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" /> </a></td>
+                                <!--<td><a style="text-decoration: none !important;	color: #008FD4 !important; "href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* --></td>
+                </tr>
+                <!-- #######-===== row =====-####### -->
+                <tr>
+                    <td align="center" style="background-color: #ffffff; padding: 0!important; text-align: center;"><!-- ********TABLE**********-->
+                    <table width="10" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********--> 					<!-- ********TABLE**********-->
+                    <table width="699" height="48" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                        <tbody>
+                            <tr>
+                                <td style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; background-color: #ffffff; vertical-align: top; padding:0 20px!important; text-align:left;" class="item">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p style="text-align: center;"><a style="text-decoration: none !important;&#9;color: #008FD4 !important;" href="http://agaperspectives.gastro.org/">The<em> </em>April/May issue  is now available</a>.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********--> 					<!-- ********TABLE**********-->
+                    <table width="240" cellspacing="0" cellpadding="0" border="0" align="right" class="item">
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********--> 					<!-- ********TABLE**********-->
+                    <table width="20" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                        <tbody>
+                            <tr>
+                                <td width="10" height="1" class="item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********--></td>
+                </tr>
+                <!-- *-------=====/Header =====-------* --> 			<!-- *-------=====/Header =====-------* --> 			<!-- *-------===== mso spacer =====-------* -->
+                <tr>
+                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+                </tr>
+                <tr>
+                    <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+                </tr>
+                <!-- *-------=====/mso spacer =====-------* -->
+                <tr>
+                    <td align="left" style="padding: 0!important; text-align: center;" class="item"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="#"> <img width="700" height="" border="0" align="top" style="display: inline" class="resize" alt="Image" src="https://s3.amazonaws.com/agaemails/perspectives/masthead_700_new.png" /> </a></td>
+                </tr>
+                <tr>
+                    <td>
+                    <table width="698" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                        <tbody>
+                            <!-- *-------===== mso spacer =====-------* -->
+                            <tr>
+                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                            </tr>
+                            <!-- *-------=====/mso spacer =====-------* -->
+                            <tr>
+                                <!--<td align="left" width="15">--> 								<!--<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />--> 								<!--</td>-->
+                                <td width="100" align="center" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0;" class="item" id="main"><!-- Content --> 									<!-- *-===== story =====-* -->
+                                <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <table width="150" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="150" height=""><img width="150" height="111" border="0" align="" class="resize" alt="" style="margin: 0px;" src="http://gastro.org/April-May-Perspectives_Pro-small.jpg" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="0" align="left" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 0 10px;">Elastography: Covering the Spectrum?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="73" align="left" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; padding: 0 10px;">Drs. Stuart Gordon and Keyur Patel review the pros and cons of elastography technology in this issue's feature story. Dr. Gordon advocates for <a href="http://agaperspectives.gastro.org/elastography-paving-a-new-pathway-in-hcv-testing/#.VztJ7zUrJhE">the growing adoption of the technology</a>, while Dr. Patel presents an overview of <a href="http://agaperspectives.gastro.org/elastography-proceed-with-caution/#.VztK6zUrJhE">potential drawbacks</a>.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *-------===== mso spacer =====-------* -->
+                                        <tr>
+                                            <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                        </tr>
+                                        <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --> 									<!-- *-===== section break =====-* -->
+                                <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <table width="" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="100%" valign="top" height="0" align="left" class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;"><span style="font-size: 28px;"><strong>Featured Articles</strong></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *-------===== mso spacer =====-------* -->
+                                        <tr>
+                                            <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                        </tr>
+                                        <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /section break =====-* --> 									<!-- *-===== story =====-* -->
+                                <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <table width="150" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="150" height=""><img width="150" height="105" border="0" align="" class="resize" alt="" style="margin: 0px;" src="http://www.gastro.org/ChronicCough-small.jpg" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="0" align="left" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 0 10px;"><a href="http://agaperspectives.gastro.org/chronic-cough-why-it-could-be-gerd-and-why-it-may-not-be/">Chronic Cough: Why it Could Be GERD and Why it May Not Be</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="73" align="left" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; padding: 0 10px;">Drs. David Francis and Michael Vaezi discuss cough evaluation in patients who may have GERD.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *-------===== mso spacer =====-------* -->
+                                        <tr>
+                                            <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                        </tr>
+                                        <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --> 									<!-- *-===== story =====-* -->
+                                <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <table width="150" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="150" height=""><img width="150" height="95" border="0" align="" class="resize" alt="" style="margin: 0px;" src="http://www.gastro.org/Promises-and-Limitations-small.jpg" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="0" align="left" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 0 10px;"><a href="http://agaperspectives.gastro.org/promises-and-limitations-translating-microbiome-research-to-practice/">Promises and Limitations: Translating Microbiome Research into Practice</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="400" valign="top" height="73" align="left" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; padding: 0 10px;">Although targeting the microbiome is not yet a cure all, there are a few areas where microbiome research will be key in practice, write Drs. Ece Mutlu and Purna Kashyap.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *-------===== mso spacer =====-------* -->
+                                        <tr>
+                                            <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                        </tr>
+                                        <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* -->  									<!-- *-===== section break =====-* -->
+                                <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <table width="" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="100%" valign="top" height="0" align="left" class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 0 0;"><span style="font-size: 28px;"><strong>Also in This Issue</strong></span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <!-- *-------===== mso spacer =====-------* -->
+                                        <tr>
+                                            <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                        </tr>
+                                        <!-- *-------=====/mso spacer =====-------* -->
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /section break =====-* --> 									<!-- *-===== story =====-* -->
+                                <table width="600" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="600" valign="top" height="73" align="left" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 600px;">
+                                            <p><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://agaperspectives.gastro.org/new-horizons-the-perspective-of-an-international-trainee-in-the-us/#.VztN_jUrJhE">New Horizons: The Perspective of an International Trainee in the US</a> 														<br />
+                                            Shounak Majumder, MBBS, MD</p>
+                                            <p><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://agaperspectives.gastro.org/health-maintenance-measures-best-practices-for-dealing-with-patients-with-ibd/#.VztOFTUrJhE">Health Maintenance Measures: Best Practices for Dealing with Patients with IBD&nbsp;</a> 														<br />
+                                            Jason Reich, MD; Sharmeel Wasan, MD; Francis Farraye, MD, MSc</p>
+                                            <p><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://agaperspectives.gastro.org/health-policy-101-preparing-future-generations-of-gis/">Health Policy 101: Preparing Future Generations of GIs&nbsp;</a> 														<br />
+                                            Brijen Shah, MD</p>
+                                            <p><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://agaperspectives.gastro.org/a-new-look-at-barretts-esophagus/#.VztOJzUrJhE">A New 'Look' at Barrett's Esophagus</a> 														<br />
+                                            Stuart Thomas, MD; Prateek Sharma, MD<strong><br />
+                                            </strong></p>
+                                            <p><a href="http://agaperspectives.gastro.org/updates-from-the-aga-young-delegates-program/#.VztYMzUrJhE">Updates from the AGA Young Delegates Program</a><br />
+                                            Siddharth Singh, MD; Renumathy Dhanasekaran, MD</p>
+                                            <p><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG />
+ </o:OfficeDocumentSettings>
+</xml><![endif]--></p>
+                                            <p><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves />
+  <w:TrackFormatting />
+  <w:PunctuationKerning />
+  <w:ValidateAgainstSchemas />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF />
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables />
+   <w:SnapToGridInCell />
+   <w:WrapTextWithPunct />
+   <w:UseAsianBreakRules />
+   <w:DontGrowAutofit />
+   <w:SplitPgBreakAndParaMark />
+   <w:EnableOpenTypeKerning />
+   <w:DontFlipMirrorIndents />
+   <w:OverrideTableStyleHps />
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math" />
+   <m:brkBin m:val="before" />
+   <m:brkBinSub m:val="&#45;-" />
+   <m:smallFrac m:val="off" />
+   <m:dispDef />
+   <m:lMargin m:val="0" />
+   <m:rMargin m:val="0" />
+   <m:defJc m:val="centerGroup" />
+   <m:wrapIndent m:val="1440" />
+   <m:intLim m:val="subSup" />
+   <m:naryLim m:val="undOvr" />
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading" />
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5" />
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature" />
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header" />
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink" />
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong" />
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text" />
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid" />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme" />
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text" />
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1" />
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision" />
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph" />
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote" />
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6" />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6" />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6" />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis" />
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis" />
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference" />
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference" />
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title" />
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography" />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading" />
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1" />
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2" />
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3" />
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4" />
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5" />
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light" />
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark" />
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful" />
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6" />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6" />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6" />
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark" />
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful" />
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5" />
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6" />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6" />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6" />
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6" />
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6" />
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><strong><span style="font-size:12.0pt;font-family:&#10;                                            &quot;Helvetica&quot;,sans-serif;mso-fareast-font-family:Calibri;mso-fareast-theme-font:&#10;                                            minor-latin;color:black;mso-ansi-language:EN-US;mso-fareast-language:EN-US;&#10;                                            mso-bidi-language:AR-SA">A hard copy of this month&rsquo;s </span></strong><em><strong><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;mso-fareast-font-family:&#10;                                            Calibri;mso-fareast-theme-font:minor-latin;color:black;mso-ansi-language:EN-US;&#10;                                            mso-fareast-language:EN-US;mso-bidi-language:AR-SA">AGA Perspective</span></strong></em><strong><span style="font-size:12.0pt;font-family:&quot;Helvetica&quot;,sans-serif;mso-fareast-font-family:&#10;                                            Calibri;mso-fareast-theme-font:minor-latin;color:black;mso-ansi-language:EN-US;&#10;                                            mso-fareast-language:EN-US;mso-bidi-language:AR-SA">s is being mailed to you thanks to a grant from Gilead.</span></strong></p>
+                                            <p>We welcome your feedback on all of the perspectives presented in this issue. Send your letters and comments to <a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="mailto:communications@gastro.org?subject=AGA%20Perspectives">communications@gastro.org</a> and include &ldquo;AGA Perspectives&rdquo; 														in the subject line.</p>
+                                            <p>Gary W. Falk, MD, MS, AGAF 														<br />
+                                            <em>AGA Perspectives</em> Editor 														<br />
+                                            <a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://www.twitter.com/drgaryfalk">@DrGaryFalk</a></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- *-===== /story =====-* --> 									<!-- /Content --></td>
+                                <!--<td align="left" width="15">--> 								<!--<img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" width="15" height="15" alt="" />--> 								<!--</td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding: 0!important; text-align: center;" class="item"></td>
+                </tr>
+                <!-- ******** FOOTER **********-->
+            </tbody>
+        </table>
+        <table width="700" cellspacing="0" cellpadding="0" border="0" align="center" class="item">
+            <tbody>
+                <tr>
+                    <td valign="top" bgcolor="#2c292e" align="left" class="cell">
+                    <table cellspacing="0" cellpadding="0" border="0" class="item">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="left" style="padding:20px 0 0 30px;" class="block">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="left" style="" class="logo-footer"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="#"> <img width="72" height="72" border="0" style="padding: 13px 0 0 0;" alt="American Gastroenterological Association" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png" /> </a></td>
+                                            <td valign="top" align="left" style="padding: 7px 0 0 20px;">
+                                            <table cellpadding="3" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img alt="" style="max-width: 13px; padding: 5px 0 0 0;" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/cell_icon.png" /></td>
+                                                        <td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;">301-654-2055</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img alt="" style="max-width: 13px; padding: 0 10px 0 0;" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/pin_drop_icon.png" /></td>
+                                                        <td style="color: #ffffff; font-size: 12px; font-family: Helvetica, Arial, sans-serif;">4930 Del Ray Ave. 																	<br />
+                                                        Bethesda, MD 20814</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                                <td valign="top" align="left" style="padding: 0 0 20px 100px;" id="social" class="block">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" align="left" colspan="4" style="color:#a9a9a9;font-family: Helvetica, Arial, sans-serif;font-size:20px;font-weight:normal; padding: 15px 0 15px 20px;">Stay Connected</td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" align="left" style="padding:0 10px;" class="social-footer"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="https://www.facebook.com/AmerGastroAssn?ref=hl"> <img width="55" height="54" border="0" style="display:block;" alt="Facebook" src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" /> </a></td>
+                                            <td valign="top" align="left" style="padding:0 10px;" class="social-footer"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="https://www.linkedin.com/grp/home?gid=915257"> <img width="55" height="54" border="0" style="display:block;" alt="LinkedIn" src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" /> </a></td>
+                                            <td valign="top" align="left" style="padding:0 10px;" class="social-footer"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="https://www.youtube.com/channel/UC9gs7X1GwlFAqO0fEf0Tysg"> <img width="55" height="54" border="0" style="display:block;" alt="YouTube" src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" /> </a></td>
+                                            <td valign="top" align="left" style="padding:0 10px;" class="social-footer"><a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="https://twitter.com/AmerGastroAssn?lang=en"> <img width="55" height="54" border="0" style="display:block;" alt="Twitter" src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" /> </a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" bgcolor="#1e1c20" align="center" style="padding:15px 0 25px 0;" class="cell" id="account">
+                    <table cellspacing="0" cellpadding="5" border="0" class="item">
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="left" style="color:#ffffff;font-family: Helvetica, Arial, sans-serif;font-size:10px;line-height:20px;" class="opt-out">Copyright &copy; American Gastroenterological Association &bull; To opt out of AGA emails, change your <a style="text-decoration: none !important;&#9;color: #008FD4 !important; " href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%">email preferences</a>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- ******** END FOOTER **********--> 	<!-- *-------===== external css =====-------* -->
+        <link href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" rel="stylesheet" />
+    </body>
+</html>

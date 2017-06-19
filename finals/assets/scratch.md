@@ -81,6 +81,8 @@ Gray spacer:
 <tr><!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]--></tr>
 <!-- *-------=====/mso spacer =====-------* -->
 
+General:
+<!--[if mso]><p>&nbsp;</p><![endif]-->
 
 
 <!-- ******** MSO Spacer **********-->

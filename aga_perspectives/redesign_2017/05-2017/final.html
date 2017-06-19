@@ -1,0 +1,756 @@
+<!doctype html>
+<html data-ember-extension="1">
+
+<head>
+    <title> Scratch2 AGA Perspectives 2017</title>
+    <style type="text/css">
+        .item1 {
+            width: 310px !important;
+        }
+
+        .item1 {
+            width: 480px !important;
+        }
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
+            line-height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a:link {
+            text-decoration: none!important; color: #008FD4;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687!important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: #0A5687!important;
+            text-decoration: underline;
+        }
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4 !important;
+        }
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        table td,
+        table tr {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: #000000;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
+        }
+
+        #preheader {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 480px) {
+            table.item {
+                border-spacing: 0;
+            }
+            table.no-space-item {
+                border-spacing: 0;
+            }
+            table.wrapper {
+                width: 310px !important;
+            }
+            td#main {
+                padding-top: 0 !important;
+            }
+            td.no-space-item {
+                margin: 0;
+                padding: 0;
+            }
+            img.banner {
+                width: 170px !important;
+                height: 37px !important;
+                padding: 0 !important;
+                margin: 0;
+            }            
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+            .item {
+                width: 310px !important;
+                padding-top: 20px;
+            }
+
+            .no-space-item {
+                width: 310px !important;
+                padding-top: 0;
+                border-spacing: 0;
+            }
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+            tr td#header.item {
+                padding: 10px 10px 0 !important;
+            }
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .content {
+                padding: 0 10px !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0 !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.item {
+                border-spacing: 0;
+            }
+            table.no-space-item {
+                border-spacing: 0;
+            }
+            table.wrapper {
+                width: 480px !important;
+            }
+            td#main {
+                padding-top: 0 !important;
+            }
+            td.no-space-item {
+                margin: 0;
+                padding: 0;
+            }
+            img.resize {
+                width: 480px !important;
+                height: auto !important;
+                padding-right: 0 !important;
+            }
+            img.banner {
+                width: 200px !important;
+                height: 43px !important;
+                padding: 0 !important;
+                margin: 0;
+            }
+            .item {
+                width: 480px !important;
+                padding-top: 20px;
+            }
+            .no-space-item {
+                width: 480px !important;
+                padding-top: 0;
+                border-spacing: 0;
+            }
+       
+
+            /*.item img {width: 480px !important;  height: auto !important;}
+                  .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .content {
+                padding: 0 10px !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0 !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+    <div id="preheader">
+        <singleline label="PreHeader">
+            <span style="display: none !important; font-size: 0px; color: #FFFFFF;">GERD Testing: Conduct On Therapy</span>
+        </singleline>
+    </div>
+    <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+    <!-- *-===== View Online =====-* -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:5px; background-color: #FFFFFF;"
+        class="wrapper">
+        <tbody>
+            <tr bgcolor="#FFFFFF">
+                <td height="6"></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td bgcolor="#FFFFFF" align="center" style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">Trouble viewing this message?
+                    <a style="text-decoration: none; color: #008FD4" href="%%VIEWONLINE%%">View it online.</a>
+                </td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td height="6"></td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]><td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+        </tbody>
+    </table>
+    <!-- *-===== /View Online =====-* -->
+    <table width="700" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:5px; background-color: #EAEEEF;"
+        class="wrapper">
+        <!-- *-===== Header =====-* -->
+        <tbody cellspacing="0" cellpadding="0" border="0">
+            <!-- #######-===== row =====-####### -->
+            <tr style="padding:0; margin:0;">
+                <td align="center" style="background-color: #ffffff; padding: 0!important; text-align: center;">
+                    <table width="699" height="58" cellspacing="0" cellpadding="0" border="0" align="left" class="no-space-item">
+                        <tbody style="padding:0; margin:0;">
+                            <tr style="padding:0; margin:0;">
+                                <td align="left" width="550" height="58" style="padding:0!important; margin:0!important; text-align:left; background-color:#ffffff;"
+                                    class="no-space-item">
+                                    <a href="http://agaperspectives.gastro.org/" target="_blank">
+                                        <img width="270" border="0" align="bottom" style="margin:0; padding:0;" class="banner" alt="AGA Perspectives" src="https://s3.amazonaws.com/agaemails/perspectives/masthead_700_new.png"
+                                        />
+                                    </a>
+                                </td>
+                                <!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+                                <td width="100" style="padding:0; margin:0;">
+                                    <a href="%%SSL_FORWARDTHIS%%">
+                                        <img style="width: 80px;" alt="Forward" src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png"
+                                        />
+                                    </a>
+                                </td>
+                                <!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- ~ / Header ~ -->
+            <tr>
+                <td>
+                    <table width="698" cellspacing="0" cellpadding="0" border="0" align="left" class="no-space-item">
+                        <tbody>
+                            <!-- *-------===== mso spacer =====-------* -->
+                            <!--[if mso]>
+                                <tr>
+                                    <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td>
+                                </tr>
+                            <![endif]-->
+                            <!-- *-------=====/mso spacer =====-------* -->
+
+                            <tr>
+                                <td width="100" align="center" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top;"
+                                    class="no-space-item" id="main">
+                                    <!-- *= CONTENT goes below this =* -->
+                                    <table class="no-space-item">
+                                        <tbody>
+                                            <tr>
+                                                <td width="500" align="center" style="font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px;">
+                                                    <p style="color: #000000; line-height:1.3em; font-size:24px;"><a style="text-decoration: none!important; color: #008FD4;" href="http://agaperspectives.gastro.org/">The April/May issue of AGA Perspectives is now available</a></p>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== section break =====-* -->
+                                    <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="" cellspacing="0" cellpadding="0" border="0" align="left" class="no-space-item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;"><span style="color: #2C292E; font-size: 28px;">Featured Debate</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" align="center" class="no-space-item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="no-space-item">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><a href="http://agaperspectives.gastro.org/gerd-testing-conduct-therapy"><img width="150" height="100" border="0" class="resize" alt="image"
+                                                                            style="display: block; width: 150px; height: 100px; padding-right: 20px;margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;"
+                                                                            src="https://s3.amazonaws.com/agaemails/images/perspectives/FeaturedDebate.jpg" /></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;">
+                                                                    <span style="color: #0A5687; font-size: 18px; padding-left:10px!important; display:inline-block;"><a style="text-decoration: none!important; color: #008FD4;" href="http://agaperspectives.gastro.org/gerd-testing-conduct-therapy">GERD Testing: Conduct On Therapy</a></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="73" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;"><span style="color: #000000; font-size: 16px; padding-left:10px!important; display:block;">Philip O. Katz, MD, FACG, AGAF, director of Motility Laboratories, Division of Gastroenterology, Jay Monahan Center for Gastrointestinal Health, makes the case that patients will be well served with a well-performed combined transnasal impedance/pH study on therapy as long as the decision to perform reflux monitoring on or off therapy is individualized.&nbsp;<a style="color:#008FD4; text-decoration:none;" href="http://agaperspectives.gastro.org/gerd-testing-conduct-therapy">Read More</a>.</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+                                    <!-- *-===== section break =====-* -->
+                                    <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;"><span style="color: #2C292E; font-size: 28px;">Highlighted Articles</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" align="center" class="no-space-item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="no-space-item">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><a href="http://agaperspectives.gastro.org/dr-sheila-crowe-becomes-president-aga/"><img width="150" height="100" border="0" class="resize" alt="image"
+                                                                            style="display: block; width: 150px; height: 100px; padding-right: 20px; margin: 0px; padding-left: 0px !important;"
+                                                                            src="https://s3.amazonaws.com/agaemails/images/perspectives/Highlighted1.jpg" /></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;">
+                                                                    <span style="color: #0A5687; font-size: 18px; padding-left:10px!important; display:inline-block;"><a style="text-decoration: none!important; color: #008FD4;" href="http://agaperspectives.gastro.org/dr-sheila-crowe-becomes-president-aga/">Dr. Sheila Crowe Becomes President of AGA</a></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="73" class="content" style="color: #000000; font-size: 16px; font-weight:normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;"><span style="color: #000000; font-size: 16px; padding-left:10px!important; display:block;">Sheila E. Crowe, MD, FRCPC, FACP, FACG, AGAF, of University of California, San Diego (UCSD), begins her term as 112th president of the AGA Institute and brings her commitment to excellence in education, research, and clinical care as well as over 20 years of active AGA member experience. <a style="color:#008FD4; text-decoration:none;" href="http://agaperspectives.gastro.org/dr-sheila-crowe-becomes-president-aga/">Read More</a>.</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+                                    <!-- *-===== story =====-* -->
+                                    <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="100" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="20%" height="73"><a href="http://agaperspectives.gastro.org/shifting-gears-hcv/"><img width="150" height="100" border="0" class="resize" alt="image"
+                                                                            style="display: block; width: 150px; height: 100px; padding-right: 20px;margin-right: 0 !important; padding-left: 0 !important; margin-left: 0 !important;"
+                                                                            src="https://s3.amazonaws.com/agaemails/images/perspectives/Highlighted2.jpg" /></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="400" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;">
+                                                                    <span style="color: #0A5687; font-size: 18px; padding-left:10px!important; display:inline-block;"><a style="text-decoration: none!important; color: #008FD4;" href="http://agaperspectives.gastro.org/shifting-gears-hcv/">Shifting Gears on HCV</a></span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="73" class="content" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px;">
+                                                                    <span style="color: #000000; font-size: 16px; padding-left:10px!important; display:block;">Andres Duarte-Rojo, MD, MS, DSc Division of Gastroenterology and Hepatology, University of Arkansas for Medical Sciences explains how the direct acting antiviral era has shifted the profile of patients with HCVc and gives his recommendations for HCVc patients.
+                                									<a style="color:#008FD4; text-decoration:none;" href="http://agaperspectives.gastro.org/shifting-gears-hcv/">Read More</a>.
+                                								</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+
+                                    <!-- *-===== section break =====-* -->
+                                    <table width="600" align="center" class="item" style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0 0 8px 0;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="" cellspacing="0" cellpadding="0" border="0" align="left" class="item">
+                                                        <tbody>
+                                                            <tr valign="top">
+                                                                <td width="100%" valign="top" align="left" height="0" class="content" style="color: #2C292E; font-size: 28px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top; padding: 5px 0 10px 0;"><span style="color: #2C292E; font-size: 28px;">Also In This Issue</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- *-------===== mso spacer =====-------* -->
+                                            <tr>
+                                                <!--[if mso]><td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                                            </tr>
+                                            <!-- *-------=====/mso spacer =====-------* -->
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /section break =====-* -->
+
+
+                                    <!-- *-===== story =====-* -->
+                                    <table style="font-family:Arial, Helvetica, sans-serif; font-size: 12px; margin: 0;" class="no-space-item" align="center"
+                                        width="600">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table class="no-space-item" cellspacing="0" cellpadding="0" align="left" width="550" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;"
+                                                                    class="content" valign="top" align="left" width="400" height="25"><a style="text-decoration: none !important; color: #008FD4 !important;"
+                                                                        href="http://agaperspectives.gastro.org/time-new-practices/">Time for New Practices?</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 400px;"
+                                                                    class="content" valign="top" align="left" width="400" height="30">Joseph D. Feuerstein, MD, and Adam S. Cheifetz, MD<br /> &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;"
+                                                                    class="content" valign="top" align="left" width="400" height="25"><a style="text-decoration: none !important; color: #008FD4 !important;"
+                                                                        href="http://agaperspectives.gastro.org/7-questions-anorectal-manometry-pelvic-floor-studies-constipation/">7 Questions About Anorectal Manometry and Pelvic Floor Studies in Constipation</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 550px;"
+                                                                    class="content" valign="top" align="left" width="400" height="30">Adil E. Bharucha, MBBS, MD<br /> &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;"
+                                                                    class="content" valign="top" align="left" width="400" height="25"><a style="text-decoration: none !important; color: #008FD4 !important;"
+                                                                        href="http://agaperspectives.gastro.org/whats-ahead-prediction-models-mortality-acute-pancreatitis/">What's Ahead? Prediction Models of Mortality in Acute Pancreatitis</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 400px;"
+                                                                    class="content" valign="top" align="left" width="400" height="30">Anand Gupte, MD and Chris E. Forsmark, MD<br /> &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #0A5687; font-size: 18px; font-weight: bold; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; vertical-align: top;"
+                                                                    class="content" valign="top" align="left" width="400" height="25">
+                                                                    <a style="text-decoration: none !important; color: #008FD4 !important;" href="http://agaperspectives.gastro.org/update-aga-research-policy-committee/">Update From the AGA Research Policy Committee
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 400px;"
+                                                                    class="content" valign="top" align="left" width="400" height="30">Andrew T. Chan, MD, MPH, AGAF<br /> &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 400px;"
+                                                                    class="content" valign="top" align="left" width="400" height="30"><b>A hard copy of this month's AGA Perspectives is being mailed to you thanks to a grant from Gilead.</b> &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; max-width: 400px;"
+                                                                    class="content" valign="top" align="left" width="400" height="225">
+                                                                    <p style="text-align:left;">We welcome your feedback on all of the perspectives presented
+                                                                        in this issue. Send your letters and comments to
+                                                                        <a style="text-decoration: none !important; color: #008FD4 !important;" href="mailto:communications@gastro.org">communications@gastro.org</a>                                                                        and include &ldquo;AGA Perspectives&rdquo; in the
+                                                                        subject line.</p>
+                                                                    <p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal;">Gary W. Falk, MD, MS, AGAF <br />
+                                                                        <em>AGA Perspectives</em> Editor <br />
+                                                                        <a style="text-decoration: none !important; color: #008FD4 !important;" href="http://www.twitter.com/drgaryfalk">@DrGaryFalk</a></p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- *-===== /story =====-* -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!-- *= /CONTENT goes above this =* -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- *%% footer %%* -->
+    <table width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="no-space-item" style="width:700px;">
+        <tbody>
+
+
+            <tr>
+                <td align="left" valign="top" bgcolor="#2c292e" class="item" style="padding:10px 35px 10px 35px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="no-space-item">
+                        <tr>
+                            <td class="block" align="left" valign="center" style="padding:27px 30px 27px 0;">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="left" valign="top" style="padding:10px 12px 0 0;">
+                                            <a href="http://www.gastro.org/"><img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png"
+                                                    alt="American Gastroenterological Association" width="72" height="72" border="0"
+                                                    style="display:block;" /></a>
+                                        </td>
+                                        <td align="left" valign="center" style="color:#a9a9a9;font-family:Arial,sans-serif;font-size:13px;line-height:16px;">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td style="padding:10px 5px 10px 10px;">
+                                                        <img src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" alt="" width="13" height="25" style="display:block;border:none;"
+                                                        />
+                                                    </td>
+                                                    <td style="padding:0 0 0 10px;">
+                                                        <span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">301-654-2055</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:10px 5px 10px 10px;">
+                                                        <img src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" alt="" width="13" height="25" style="display:block;border:none;"
+                                                        />
+                                                    </td>
+                                                    <td style="padding:0 0 0 10px;">
+                                                        <span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">4930 Del Ray Ave. Bethesda, MD 20814</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="block" align="left" valign="center" style="color:#a9a9a9;font-family:Arial, sans-serif;font-size:24px;line-height:23px;">
+                                <!--[if mso]>
+                        <font face="Helvetica, sans-serif"><![endif]-->Stay Connected
+                                <!--[if mso]></font><![endif]-->
+                                <table border="0" cellpadding="0" cellspacing="0" class="social">
+                                    <tr>
+                                        <td align="left" valign="top" style="padding:20px 5px 0 0;">
+                                            <a href="https://www.facebook.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif"
+                                                    alt="Facebook" width="55" height="54" border="0" style="display:block;" /></a>
+                                        </td>
+                                        <td align="left" valign="top" style="padding:20px 5px 0 0;">
+                                            <a href="https://www.linkedin.com/groups/915257"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif"
+                                                    alt="Instagram" width="55" height="54" border="0" style="display:block;"
+                                                /></a>
+                                        </td>
+                                        <td align="left" valign="top" style="padding:20px 5px 0 0;">
+                                            <a href="https://www.youtube.com/user/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif"
+                                                    alt="YouTube" width="55" height="54" border="0" style="display:block;" /></a>
+                                        </td>
+                                        <td align="left" valign="top" style="padding:20px 5px 0 0;">
+                                            <a href="https://twitter.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif"
+                                                    alt="Twitter" width="55" height="54" border="0" style="display:block;" /></a>
+                                        </td>
+                                        <td align="left" valign="top" style="padding: 20px 0 0 0;">
+                                            <a href="http://community.gastro.org"><img src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif"
+                                                    alt="Community" width="55" height="54" border="0" style="display:block;"
+                                                /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" bgcolor="#1e1c20" class="item" style="padding:32px 29px 32px 35px;">
+                    <table border="0" cellpadding="0" cellspacing="0" class="item">
+                        <tr>
+                            <td align="left" valign="top" style="color:#ffffff;font-family:Arial, sans-serif;font-size:10px;line-height:20px; padding:0 10px;">
+                                Copyright &copy; American Gastroenterological Association&nbsp;&#8226;&nbsp;To opt out of AGA emails, change your
+                                <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="text-decoration: none; color: #008FD4;"> email preferences</a>.
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- *%% /footer %%* -->
+    <!-- *-------===== external css =====-------* -->
+    <link href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" rel="stylesheet" />
+
+
+</body>
+
+</html>

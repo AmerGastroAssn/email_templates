@@ -1,409 +1,467 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html data-ember-extension="1">
+<!doctype html>
+<html>
 
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <title>Hero Image - Long Form</title>
+    <!-- *-------===== http://gastrodev.org/dev/Emails/email_redesign_templates/short_form_hero_image.html =====-------* -->
     <style type="text/css">
-        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-
-        #outlook a {
-            padding: 0;
-        }
-        /* Force Outlook to provide a "view in browser" message */
-
-        .ReadMsgBody {
-            width: 100%;
+        .item1 {
+            width: 310px !important;
         }
 
-        .ExternalClass {
-            width: 100%;
+        .item1 {
+            width: 480px !important;
         }
-        /* Force Hotmail to display emails at full width */
-
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-        /* Force Hotmail to display normal line spacing */
-
-        body,
-        table,
-        td,
-        p,
-        a,
-        li,
-        blockquote {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-        /* Prevent WebKit and Windows mobile changing default text sizes */
-
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        /* Remove spacing between tables in Outlook 2007 and up */
-
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-        /* Allow smoother rendering of resized image in Internet Explorer */
-        /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
 
         body {
+            background-color: #ffffff;
+            color: #000000;
             margin: 0;
             padding: 0;
         }
 
         img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
             outline: none;
             text-decoration: none;
         }
 
-        table {
-            border-collapse: collapse !important;
-        }
-
-        body,
-        #bodyTable,
-        #bodyCell {
-            height: 100% !important;
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
-        }
-        /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-        /* ========== Page Styles ========== */
-
-        #bodyCell {
-            padding: 20px;
-        }
-
-        #templateContainer {
-            width: 600px;
-        }
-
-        body,
-        #bodyTable {
-            background-color: #DEE0E2;
-        }
-
-        h1 {
-            color: #202020 !important;
-            display: block;
-            font-family: Helvetica;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: bold;
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
             line-height: 100%;
-            letter-spacing: normal;
-            margin-top: 0;
-            margin-right: 0;
-            margin-bottom: 10px;
-            margin-left: 0;
-            text-align: left;
-        }
-        /* ========== Header Styles ========== */
-
-        #templateHeader {
-            background-color: #FFFFFF;
-            border-top: 1px solid #FFFFFF;
-            border-bottom: 1px solid #CCCCCC;
         }
 
-        .headerContent {
-            color: #505050;
-            font-family: Helvetica;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 100%;
-            padding-top: 0;
-            padding-right: 0;
-            padding-bottom: 0;
-            padding-left: 0;
-            text-align: left;
-            vertical-align: middle;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
         }
 
-        .headerContent a:link,
-        .headerContent a:visited,
-        /* Yahoo! Mail Override */
-
-        .headerContent a .yshortcuts
-        /* Yahoo! Mail Override */
-
-        {
-            color: #006181;
-            font-weight: bold;
-            font-weight: normal;
-            text-decoration: underline;
-        }
-
-        #headerImage {
-            height: auto;
-            max-width: 600px;
-        }
-
-        #headerImage2 {
-            height: auto;
-            max-width: 600px;
-        }
-
-        #footerImage {
-            height: auto;
-            max-width: 500px;
-        }
-        /* ========== Body Styles ========== */
-
-        .templateBody {
-            background-color: #FFFFFF;
-            border-top: 1px solid #FFFFFF;
-            border-bottom: 1px solid #CCCCCC;
-        }
-
-        .bodyContent {
-            color: #505050;
-            font-family: Helvetica;
-            font-size: 14px;
-            line-height: 150%;
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
+        ul {
             text-align: left;
         }
 
-        .bodyContent a:link,
-        .bodyContent a:visited,
-        /* Yahoo! Mail Override */
+        a:link {
+            text-decoration: none !important;
+            color: #008FD4 !important;
+        }
 
-        .bodyContent a .yshortcuts
-        /* Yahoo! Mail Override */
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687 !important;
+        }
 
-        {
-            color: #006181;
-            font-weight: bold;
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: #0A5687 !important;
             text-decoration: underline;
         }
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
 
-        .bodyContent img {
-            display: inline;
-            height: auto;
-            max-width: 560px;
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4 !important;
         }
-        /* ========== Footer Styles ========== */
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
 
-        #templateFooter {
-            background-color: #FFFFFF;
-            border-top: 1px solid #FFFFFF;
-            border-bottom: 30px solid #003C60;
-        }
-
-        .footerContent {
-            color: #808080;
-            font-family: Helvetica;
-            font-size: 10px;
-            line-height: 150%;
-            padding-top: 20px;
-            padding-right: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
-            text-align: center;
+        table td,
+        table tr {
+            border-collapse: collapse;
         }
 
-        .footerContent img {
-            padding: 3px !important;
+        .yshortcuts,
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
         }
 
-        .footerContent a:link,
-        .footerContent a:visited,
-        /* Yahoo! Mail Override */
-
-        .footerContent a .yshortcuts,
-        .footerContent a span
-        /* Yahoo! Mail Override */
-
-        {
-            color: #606060;
-            font-weight: normal;
-            text-decoration: underline;
+        #preheader {
+            display: none !important;
         }
-        /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
 
-        @media only screen and (max-width: 480px) {
-            /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
-            body,
-            table,
-            td,
-            p,
-            a,
-            li,
-            blockquote {
-                -webkit-text-size-adjust: none !important;
+        @media screen and (max-width: 480px) {
+            table.wrapper {
+                width: 310px !important;
             }
-            /* Prevent Webkit platforms from changing default text sizes */
-            body {
-                width: 100% !important;
-                min-width: 100% !important;
+
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
             }
-            /* Prevent iOS Mail from adding padding to the body */
-            /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
-            #bodyCell {
+
+            .item {
+                width: 310px !important;
+            }
+
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+
+            tr td#header.item {
+                padding: 10px 10px 0 10px !important;
+            }
+
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0 !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
                 padding: 10px !important;
             }
-            /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
-            /* ======== Page Styles ======== */
-            #templateContainer {
-                max-width: 600px !important;
-                width: 100% !important;
+
+            #account {
+                padding: 0 !important;
             }
 
-            h1 {
-                font-size: 24px !important;
-                line-height: 100% !important;
+            td.social-footer {
+                padding: 0 0.5em !important;
             }
-            /* ======== Header Styles ======== */
-            #headerImage {
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.wrapper {
+                width: 480px !important;
+            }
+
+            img.resize {
+                width: 480px !important;
                 height: auto !important;
-                max-width: 600px !important;
-                width: 100% !important;
             }
 
-            #headerImage2 {
-                height: auto !important;
-                max-width: 600px !important;
-                width: 100% !important;
+            .item {
+                width: 480px !important;
             }
 
-            #footerImage {
-                height: auto !important;
-                max-width: 500px !important;
-                width: 100% !important;
+
+            /*.item img {width: 480px !important;  height: auto !important;}
+                  .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
             }
 
-            /* ======== Body Styles ======== */
-            .bodyContent {
-                font-size: 18px !important;
-                line-height: 125% !important;
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0 !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            #account {
+                padding: 0 !important;
+            }
+
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
             }
         }
     </style>
-    <title>DDW</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
 </head>
-<body offset="0" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<body>
     <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
     <div id="preheader">
-        <singleline label="PreHeader"><span style="display: none !important; font-size: 0px; color: #E5E7E8;">Crohn's &amp; Colitis Congress: Jan. 18-20, 2018, Las Vegas</span></singleline>
+        <singleline label="PreHeader"> <span style="display: none !important; font-size: 0; color: #EAEEEF;"> </span> Access enhanced member benefits free for your first year. </singleline>
     </div>
     <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
-    <center>
-        <table id="bodyTable" cellspacing="0" cellpadding="0" border="0" align="center" height="100%" width="100%">
-            <tbody>
-                <tr>
-                    <td id="bodyCell" align="center" valign="top">
-                        <!-- BEGIN TEMPLATE // -->
-                        <table id="templateContainer" cellspacing="0" cellpadding="0" border="0">
-                            <tbody>
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <!-- BEGIN HEADER // -->
-                                        <table id="templateHeader" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="headerContent" valign="top">
-                                                        <img src="https://s3.amazonaws.com/agaemails/images/ddw/2390-005COM_17-1_CCC_Email_Footer.jpg" alt="" style="max-width:600px; margin:0;" id="headerImage">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="headerContent" valign="top"><a href="http://www.ddw.org/"><img id="headerImage2" style="max-width: 600px; margin: 0px;" src="https://gastro.imagerelay.com/ql/a96bfb49302247b1948397f89b9ade5a/2390-005COM_17-1_CCC_Email_Header.jpg" alt="" border="0" align="" /></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- // END HEADER -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <!-- BEGIN BODY // -->
-                                        <table class="templateBody" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="bodyContent" valign="top">
-                                                        <h1>This is a Headline if Needed</h1> Type Type and Away. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum
-                                                        id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <br />
-                                                        <br />
-                                                        <a href="#"><img src="https://s3.amazonaws.com/agaemails/DDW/ddw17/ddw_button_sq_abstract.gif" alt="" /></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="templateBody" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="bodyContent" valign="top">
-                                                        <h1>This is a Headline if Needed</h1> Type Type and Away. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum
-                                                        id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <br />
-                                                        <br />
-                                                        <a href="#"><img src="https://s3.amazonaws.com/agaemails/DDW/ddw17/ddw_button_sq_reg.gif" alt="" /></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="templateBody" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="bodyContent" valign="top">
-                                                        <h1>This is a Headline if Needed</h1> Type Type and Away. <a href="#">Link example here</a>. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes,
-                                                        nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia
-                                                        quam venenatis vestibulum. <br />
-                                                        <br />
-                                                        <a href="#"><img src="https://s3.amazonaws.com/agaemails/DDW/ddw17/ddw_button_sq_more.gif" alt="" /></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table class="templateBody" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="bodyContent" valign="top">
-                                                        <h1>This is a Headline if Needed</h1> Type Type and Away. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum
-                                                        id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <br />
-                                                        <br />
-                                                        <a href="#"><img src="https://s3.amazonaws.com/agaemails/DDW/ddw17/ddw_button_sq_survey.gif" alt="" /></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- // END BODY -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center" valign="top">
-                                        <!-- BEGIN FOOTER // -->
-                                        <table id="templateFooter" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="bodyContent">
-                                                        <img src="https://s3.amazonaws.com/agaemails/images/ddw/2390-005COM_17-1_CCC_Email_Footer.jpg" alt="" id="footerImage">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!-- // END FOOTER -->
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- // END TEMPLATE -->
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </center>
+    <!-- *-===== View Online =====-* -->
+    <table class="wrapper" style="margin-top:5px; background-color: #EAEEEF;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+            <tr bgcolor="#EAEEEF">
+                <td height="6"></td>
+            </tr>
+            <tr bgcolor="#EAEEEF">
+                <td style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#EAEEEF" align="center">Trouble viewing this message? <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a></td>
+            </tr>
+            <tr bgcolor="#EAEEEF">
+                <td height="6"></td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+        </tbody>
+    </table>
+    <!-- *-===== /View Online =====-* -->
+    <table class="wrapper" style="margin-top:5px; background-color: #EAEEEF;" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+        <!-- *-===== Header =====-* -->
+        <tbody>
+            <tr>
+                <td style="background-color: #ffffff; padding: 20px 0 !important; text-align: center;" align="center">
+                    <!-- ********TABLE**********-->
+                    <table class="item" width="100" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="socialicons" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td width="150" align="left"></td>
+                                                <td><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" width="15" height="15" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--=== Forward btn ===--%%%%%%%* -->
+                    <table valign="top" id="forward-btn" class="item" style="padding: 5px; width: 100px; text-align: center;" width="100" cellspacing="0" cellpadding="0" border="0" align="right">
+                        <tbody>
+                            <tr>
+                                <td width="80"><a href="%%SSL_FORWARDTHIS%%">                                     <img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/finals/forward-btn.png" alt="Forward" style="width: 80px;" />                                 </a></td>
+                                <!--<td><a href="%%SSL_FORWARDTHIS%%" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:12px;font-weight:normal; text-decoration: none; text-transform: uppercase;">FORWARD</a></td>-->
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- *%%%%%%%--===/Forward btn ===--%%%%%%%* -->
+                </td>
+            </tr>
+            <!-- #######-===== row =====-####### -->
+            <tr>
+                <td style="background-color: #ffffff; padding: 0!important; text-align: center;" align="center">
+                    <!-- ********TABLE**********-->
+                    <table class="item" width="10" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <table class="item" width="500" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="font-family: Helvetica, Arial, sans-serif; font-size: 20px; background-color: #ffffff; vertical-align: top; padding:0 0!important; text-align:center;" class="item">
+                                    <p>Aug. 31 Deadline Approaching</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <table class="item" width="240" cellspacing="0" cellpadding="0" border="0" align="right">
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->
+                    <!-- ********TABLE**********-->
+                    <table class="item" width="20" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <tbody>
+                            <tr>
+                                <td class="item" width="10" height="1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ********END TABLE**********-->
+                </td>
+            </tr>
+            <!-- *-------=====/Header =====-------* -->
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #ffffff;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <tr>
+                <td class="item" style="padding: 0!important; text-align: center;" align="left"><a href="#">                         <img src="https://gastro.imagerelay.com/ql/1a0bf71e96364e8297fa9467b50a8c0f/1100-020MEM_16-10_2017_Member_Renewal_Email_Header_FINAL.jpg" alt="Image" class="resize" style="display: inline" width="700" border="0" align="top" height="" />                     </a></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="item" width="700" cellspacing="0" cellpadding="0" border="0" align="left">
+                        <!-- *-------===== mso spacer =====-------* -->
+                        <tbody>
+                            <tr>
+                                <!--[if mso]>
+                            <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+                            </tr>
+                            <!-- *-------=====/mso spacer =====-------* -->
+                            <tr>
+                                <td width="15" align="left"><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" width="15" height="15" /></td>
+                                <td class="item" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0 !important;" width="100" align="center">
+                                    <p style="text-align: left; padding-top: 20px;">Thank you for your membership in AGA.<strong> Please note, your membership expires after Aug. 31, 2017.&nbsp;</strong>As you begin your GI training, don&rsquo;t risk missing enhanced member benefits that are critical
+                                        to your advancement in fellowship. AGA is committed to seeing you thrive throughout your training and beyond.</p>
+                                    <p style="text-align: left;">You can <a style="text-decoration: none;  color: #008FD4;" href="http://www.gastro.org/fellowapp">join AGA as a trainee now for free</a> (first year pricing) and enjoy increased career-enhancing benefits. Members also get exclusive access to tools, discounts to meetings
+                                        and many other offerings. Don&rsquo;t miss out on benefits that help keep you informed and thriving in the GI field.</p>
+                                    <p style="text-align: center;"><span style="color:#0A5687; font-weight:bold; font-size:18px;"><a style="text-decoration: none;  color: #008FD4;" href="http://www.gastro.org/renew">Join today</a></span><span style="color:#0A5687; font-weight:bold; font-size:18px;"><a style="text-decoration: none;  color: #008FD4;" href="http://www.gastro.org/fellowapp">.&nbsp;</a></span></p>
+                                    <!-- *%%%%%%%--=== button ===--%%%%%%%* -->
+                                    <div style="margin: 0 auto;"></div>
+                                    <p style="text-align: left;">If you have any questions about your membership or would like to renew over the phone, contact AGA Member Relations at <a style="text-decoration: none;  color: #008FD4;" href="mailto:member@gastro.org">member@gastro.org</a> or at 301-941-2651. <br />
+                                        <br />
+                                        <strong>Need to update your contact information?</strong> Login to <a style="text-decoration: none;  color: #008FD4;" href="http://www.gastro.org/my-aga">My AGA</a> to update your profile to ensure that you receive valuable information including AGA publications.</p>
+                                        <br>
+                                    <!-- *%%%%%%%--===/button ===--%%%%%%%* -->
+                                </td>
+                                <td width="15" align="left"><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" width="15" height="15" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <!-- *%% footer %%* -->
+        </tbody>
+    </table>
+    <table class="item" style="width:700px;" width="700" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+            <tr>
+                <td class="item" style="padding:10px 35px 10px 35px;" valign="top" bgcolor="#2c292e" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="block" style="padding:27px 30px 27px 0;" valign="center" align="left">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:10px 12px 0 0;" valign="top" align="left"><a href="http://www.gastro.org/"><img src="https://s3.amazonaws.com/agaassets/images/aga_seal_new.png" alt="American Gastroenterological Association" style="display:block;" width="72" border="0" height="72" /></a></td>
+                                                <td style="color:#a9a9a9;font-family:Arial,sans-serif;font-size:13px;line-height:16px;" valign="center" align="left">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" alt="" style="display:block;border:none;" width="13" height="25" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">301-654-2055</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" alt="" style="display:block;border:none;" width="13" height="25" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">4930 Del Ray Ave. Bethesda, MD 20814</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="block" style="color:#a9a9a9;font-family:Arial, sans-serif;font-size:24px;line-height:23px;" valign="center" align="left">
+                                    <!--[if mso]>
+                                    <font face="Helvetica, sans-serif"><![endif]-->Stay Connected
+                                    <!--[if mso]></font><![endif]-->
+                                    <table class="social" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.facebook.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" alt="Facebook" style="display:block;" width="55" border="0" height="54" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.linkedin.com/groups/915257"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" alt="Instagram" style="display:block;" width="55" border="0" height="54" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.youtube.com/user/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" alt="YouTube" style="display:block;" width="55" border="0" height="54" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://twitter.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" alt="Twitter" style="display:block;" width="55" border="0" height="54" /></a></td>
+                                                <td style="padding: 20px 0 0 0;" valign="top" align="left"><a href="http://community.gastro.org"><img src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif" alt="Community" style="display:block;" width="55" border="0" height="54" /></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="item" style="padding:32px 29px 32px 35px;" valign="top" bgcolor="#1e1c20" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="color:#ffffff;font-family:Arial, sans-serif;font-size:10px;line-height:20px;" valign="top" align="left">Copyright &copy; American Gastroenterological Association&nbsp;&bull;&nbsp;To opt out of AGA emails, change your <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="text-decoration: none; color: #008FD4;"> email preferences</a>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- *%% /footer %%* -->
+    <!-- *-------===== external css =====-------* -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" />
 </body>
 
 </html>

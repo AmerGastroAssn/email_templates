@@ -5,6 +5,20 @@
     <title>Plain text</title>
     <!-- *-------===== http://gastrodev.org/dev/Emails/email_redesign_templates/plain_text.html =====-------* -->
     <style type="text/css">
+        table.wrapper {}
+
+        img.resize {}
+
+        .item {}
+
+        .item img {}
+
+        .item img.disappear {}
+
+        .item img.noresize {}
+
+        .item1 {}
+
         .item1 {
             width: 310px !important;
         }
@@ -12,7 +26,6 @@
         .item1 {
             width: 480px !important;
         }
-
         /* Reset Styles */
         /* Add 100px so mobile switch bar doesn't cover street address. */
 
@@ -69,7 +82,6 @@
             color: #0A5687 !important;
             text-decoration: underline;
         }
-
         /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
 
         h1 a:visited,
@@ -80,7 +92,6 @@
         h6 a:visited {
             color: #008FD4 !important;
         }
-
         /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
 
         table td,
@@ -100,10 +111,9 @@
             border-bottom: none !important;
             background: none !important;
         }
-
         /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
-
         /* Preheader */
+
         span.preheader {
             display: none !important;
         }
@@ -222,80 +232,67 @@
             }
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
 </head>
+
 <body>
-
-    <table class="item" border="0" align="center" width="700" cellpadding="0" cellspacing="0" style="padding:10px;">
+    <div id="preheader">
+        <singleline label="PreHeader"> <span style="display: none !important; font-size: 0px; color: #ffffff;">  </span></singleline>
+    </div>
+    <table class="item" style="padding:10px;" cellspacing="0" cellpadding="0" border="0" align="center" width="700">
         <tbody>
-
-        <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
-        <div id="preheader">
-            <singleline label="PreHeader">
-                <span style="display: none !important; font-size: 0px; color: #ffffff;">  </span></singleline>
-        </div>
-        <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
-
-        <tr>
-            <td class="item" style="color: #000000; font-size: 16px; font-family: Cambria, Charter, Georgia, 'Times New Roman', serif; line-height: 1.5em; padding: 0">
-                <p>#Dear Dr. %%LAST%%,</p>
-                <p># Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="http://www.gastro.org" style="color: #008FD4; text-decoration: none;">#AGA Women's Talent Bank</a>.
-                </p>
-
-                <p># Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-
-                <p>#Please complete the
-                    <a href="http://www.gastro.org" style="color: #008FD4; text-decoration: none;">#online form</a> by Aug. 28, 2015, to officially join AGA's Women's Talent Bank.
-                </p>
-                <p>#Sincerely,</p>
-                <p>&nbsp;</p>
-
-                <p style="line-height: 1em;">
-                    <span style="color:#0A5687; font-weight: bold;">#John Doe, MD, PhD, AGAF</span>
-                    <br/>
-                    <span>
-                        <small>#CHAIR</small>
-                    </span>
-                    <br/>
-                    <span>
-                        <small>#AGA Women's Committee</small>
-                    </span>
-                </p>
-
-                <p style="line-height: 1em;">
-                    <span style="color:#0A5687; font-weight: bold;">#Jane Doe, MD, MPH, AGAF</span>
-                    <br/>
-                    <span>
-                        <small>#CHAIR</small>
-                    </span>
-                    <br/>
-                    <span>
-                        <small>#AGA Women's Leadership Council</small>
-                    </span>
-                </p>
-
-
-            </td>
-        </tr>
-        <tr>
-            <td align="center" valign="top" bgcolor="#ffffff" id="account" class="cell" style="padding:15px 0 25px 0;">
-                <table border="0" cellpadding="5" cellspacing="0" class="item">
-                    <tr>
-                        <td align="left" valign="top" class="opt-out" style="color:#000000;font-family: Helvetica, Arial, sans-serif;font-size:10px;line-height:20px;">
-                            Copyright &copy; American Gastroenterological Association &bull; To opt out of AGA emails, change your
-                            <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="color:#008fd4;text-decoration:none;">email preferences</a>.
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
+            <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+            <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+            <tr>
+                <td class="item" style="color: #000000; font-size: 16px; font-family: Cambria, Charter, Georgia, 'Times New Roman', serif; line-height: 1.5em; padding: 0">
+                    <p>The four U.S. gastroenterology and hepatology societies have made history this year. For the first time,
+                        the presidents of AGA, AASLD, ACG and ASGE are women.&nbsp;</p>
+                    <div></div>
+                    <p>To mark and celebrate this occasion, the four presidents have chronicled the rise of women in GI society
+                        leadership in a special article appearing online ahead of print in all four organizations&rsquo;
+                        professional journals: &ldquo;<a href="http://www.gastrojournal.org/article/S0016-5085(17)35948-6/fulltext"
+                            target="_blank">Society Leadership and Diversity; Hail to the Women!</a>&rdquo; The article will
+                        be published in the September issue of <em>Gastroenterology</em> in honor of Women in Medicine Month.</p>
+                    <div></div>
+                    <p>The fact that women are in the top position at all four societies simultaneously is not by design, but
+                        by coincidence. This signals a strong recognition of the importance of diversity and inclusion in
+                        the profession. Women represent only 16.4 percent of the 14,107 actively practicing gastroenterologists
+                        in the U.S., but opportunities for women in society leadership positions have grown.&nbsp;</p>
+                    <div></div>
+                    <p>The article looks at the history of women presidents in GI societies. All four have had remarkable women
+                        in the top position as long ago as 1942. But, they have been relatively few and far between. The
+                        gap has narrowed in recent years, with women rising to the president position more frequently. The
+                        piece also documents the percentage of each society&rsquo;s overall leadership positions held by
+                        women. Each society has one or more programs or committees focused on creating mentorship, networking
+                        and learning opportunities for women and for all members with an eye toward diversity.&nbsp;</p>
+                    <div></div>
+                    <p>In the article, the presidents give some valuable advice to other women in gastroenterology. And, they
+                        offer this call to action for the future: &ldquo;Medical societies and their leaderships must stand
+                        for equality, remove barriers and continue to foster opportunities to build the cohort of emerging
+                        leaders in gastroenterology and hepatology.&rdquo;</p>
+                    <div></div>
+                    <p><a href="http://www.gastrojournal.org/article/S0016-5085(17)35948-6/fulltext" target="_blank">Read the full article</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="account" class="cell" style="padding:15px 0 25px 0;" bgcolor="#ffffff" align="center" valign="top">
+                    <table class="item" cellspacing="0" cellpadding="5" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="opt-out" style="color:#000000;font-family: Helvetica, Arial, sans-serif;font-size:10px;line-height:20px;" align="left"
+                                    valign="top">Copyright &copy; American Gastroenterological Association &bull; To opt out of AGA emails,
+                                    change your <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%"
+                                        style="color:#008fd4;text-decoration:none;">email preferences</a>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
         </tbody>
     </table>
-
     <!-- *-------===== external css =====-------* -->
-    <link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css"/>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" />
 </body>
 
 </html>

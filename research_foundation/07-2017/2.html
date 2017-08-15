@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sidebar</title>
+    <!-- *-------===== http://gastrodev.org/dev/Emails/email_redesign_templates/sidebar.html =====-------* -->
+    <style type="text/css">
+        .item1 {
+            width: 310px !important;
+        }
+
+        .item1 {
+            width: 480px !important;
+        }
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
+
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
+            line-height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: #008FD4;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687 !important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: #0A5687 !important;
+            text-decoration: underline;
+        }
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4;
+        }
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        table td,
+        table tr {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts,
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
+        }
+
+        #preheader {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 480px) {
+            table.wrapper {
+                width: 310px !important;
+                padding-bottom: 10px !important;
+            }
+
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
+            }
+
+            .item {
+                width: 310px !important;
+            }
+
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+
+            tr td#header.item {
+                padding: 10px 10px 0 10px !important;
+            }
+
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0px !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            #account {
+                padding: 0 !important;
+            }
+
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.wrapper {
+                width: 480px !important;
+            }
+
+            img.resize {
+                width: 480px !important;
+                height: auto !important;
+            }
+
+            .item {
+                width: 480px !important;
+            }
+
+            /*.item img {width: 480px !important;  height: auto !important;}
+                  .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+
+            .logotext {
+                display: none;
+            }
+
+            td#seal {
+                padding: 0px !important;
+            }
+
+            #forward-btn {
+                max-width: 100px;
+            }
+
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+
+            #account {
+                padding: 0 !important;
+            }
+
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+</head>
+
+<body>
+    <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+    <div id="preheader">
+        <singleline label="PreHeader"> <span style="display: none !important; font-size: 0px; color: #ffffff;">AGA Research Foundation</span> </singleline>
+    </div>
+    <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+    <!-- *-===== View Online =====-* -->
+    <table class="wrapper" style="margin-top:5px; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        <tbody>
+            <tr bgcolor="#ffffff">
+                <td height="6"></td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <td style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#ffffff" align="center">Trouble viewing this message? <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a></td>
+            </tr>
+            <tr bgcolor="#ffffff">
+                <td height="6"></td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+            <td style="background-color: #ffffff;">
+                <p>&nbsp;</p>
+            </td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+        </tbody>
+    </table>
+    <!-- *-===== /View Online =====-* -->
+    <table class="wrapper" style="margin-top:5px; background-color: #ffffff;" cellspacing="0" cellpadding="0" border="0" align="center" width="700">
+        <!-- *-===== Header =====-* -->
+        <tbody>
+            <tr>
+                <td style="background-color: #ffffff; padding: 20px 0 !important; text-align: center;" align="center">
+                    <!-- ********TABLE**********-->
+                    <table class="item" cellspacing="0" cellpadding="0" border="0" align="left" width="100">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="socialicons" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" width="150"></td>
+                                                <td><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" height="15" width="15" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- *-------=====/Header =====-------* -->
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+            <td style="background-color: #ffffff;">
+                <p>&nbsp;</p>
+            </td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <tr>
+                <!-- ******** COLUMN OF CONTENT **********-->
+                <td style="padding-bottom: 20px;">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0" align="left" width="460">
+                        <tbody>
+                            <tr>
+                                <!--<td align="left" width="15">&nbsp;</td>-->
+                                <td class="item" id="content" style="color: #000000; background-color: #ffffff; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px 0 0 30px;" align="left">
+                                    <p>Dear %%CUSTOM39%% %%LAST%%,</p>
+                                    <p>Everything you do as a gastroenterologist, every day, is the result of some scientist&rsquo;s investigations to show us a better way to care for patients.</p>
+                                    <p>At a time when we are on the brink of major scientific breakthroughs, there is a growing gap in federal funding for research. Future advances in GI research are at risk. Many well-qualified young investigators cannot
+                                        get government funding.</p>
+                                    <p><a style="text-decoration: none !important; color: #008FD4;" href="http://www.gastro.org/donateonline"><strong>Your support of young researchers</strong></a> is more important than ever because traditional sources of funding are on the decline. With the threat of NIH, VA and
+                                        other federal grant sources stagnating or decreasing, it is up to us to provide the needed funding to foster scientific discovery and improve the care of patients with digestive disease.</p>
+                                    <p>I am writing to you today to ask for your support of talented investigators with a tax-deductible gift of $100 or any amount you can give. Your gift will fund young investigators whose work shapes the field of gastroenterology.</p>
+                                    <p><strong>Your support is critical. </strong><strong>The way we diagnose and treat patients today is the direct result of years of research. The AGA Research Foundation supports investigators so that clinicians will have better patient care tools tomorrow.</strong></p>
+                                    <p>I know you understand the importance of retaining talented GI researchers. <strong>Can we count on your support?</strong></p>
+                                    <p><a style="text-decoration: none !important; color: #008FD4;" href="http://www.gastro.org/about/aga-research-foundation/contribute">  <strong>Yes, I'll pitch in to fill the gap in research funding</strong></a><strong>.</strong></p>
+                                    <p>Thank you for considering this request. Your generosity makes a difference in providing critical funds needed for GI research.</p>
+                                    <p>Sincerely,</p>
+                                    <p>Robert S. Sandler, MD, MPH, AGAF<br /> Chair, AGA Research Foundation<br /> Nina C. and John T. Sessions Distinguished Professor<br /> University of North Carolina</p>
+                                    <p>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <!-- *-------===== mso spacer =====-------* -->
+                            <tr>
+                                <!--[if mso]>
+                        <td style="background-color:#ffffff;">
+                            <p>&nbsp;</p>
+                        </td><![endif]-->
+                            </tr>
+                            <tr>
+                                <!--[if mso]>
+                        <td style="background-color:#ffffff;">
+                            <p>&nbsp;</p>
+                        </td><![endif]-->
+                            </tr>
+                            <!-- *-------=====/mso spacer =====-------* -->
+                        </tbody>
+                    </table>
+                    <!-- ******** END COLUMN OF CONTENT **********-->
+                    <!-- ******** SPACER COLUMN **********-->
+                    <table class="item" cellspacing="0" cellpadding="0" border="0" align="left" width="30">
+                        <tbody>
+                            <tr>
+                                <td class="item" height="10" width="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ******** END SPACER COLUMN **********-->
+                    <!-- ******** Sidebar **********-->
+                    <table class="item" cellspacing="1" cellpadding="10" border="0" align="left" width="180">
+                        <tbody>
+                            <tr>
+                                <td class="item" style="text-align:center; background-color:#ffffff; vertical-align: top; padding:0;"><img class="resize" src="https://gastro.imagerelay.com/ql/771571a2237d455d9bbadfc17ceba703/Silvia_Affo.png" alt="image" style="margin: 0px;" border="0" align="" width="180" /></td>
+                            </tr>
+                            <tr>
+                                <td class="item" style="text-align:left; background-color: #0A5687; color: #a1dcf8; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px !important;">
+                                    <p><span>&quot;</span><em>Thanks to the AGA Research Foundation and foundation donors, the Research Scholar Award will help me build a research program to better understand mechanisms that promote the growth of cholangiocarcinoma.</em>&quot;&nbsp;</p>
+                                    <p>Silvia Affo, PhD,<br /> Columbia University,<br /> 2017 AGA Research Scholar Award Recipient</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="item" style="text-align:left; background-color: #ffffff; color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 10px !important;"><strong><span>Support Research. Donate Today.</span></strong></td>
+                            </tr>
+                            <tr>
+                                <td class="item">
+                                    <!-- *-------===== Button =====-------* -->
+                                    <center>
+                                        <div style="margin: 0 0 5px 0;">
+                                            <table style="background-color: #d6d63d; padding: 6px 12px; width: 125px; text-align: center; border-radius: 30px;" align="middle">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="http://www.gastro.org/donateonline" style="color:#ffffff!important;font-family:Arial, sans-serif;font-size:16px;font-weight:normal; text-decoration: none; text-transform:uppercase;">                                                     <span style="color:#ffffff;">Donate</span>                                                 </a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </center>
+                                    <!-- *-------=====/Button =====-------* -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ******** Sidebar **********-->
+                    <!-- ******** SPACER COLUMN **********-->
+                    <table class="item" cellspacing="0" cellpadding="0" border="0" align="left" width="30">
+                        <tbody>
+                            <tr>
+                                <td class="item" height="10" width="30"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- ******** END SPACER COLUMN **********-->
+                </td>
+            </tr>
+            <!-- *%% footer %%* -->
+        </tbody>
+    </table>
+    <table class="item" style="width:700px;" cellspacing="0" cellpadding="0" border="0" align="center" width="700">
+        <tbody>
+            <tr>
+                <td class="item" style="padding:10px 35px 10px 35px;" valign="top" bgcolor="#2c292e" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="block" style="padding:27px 30px 27px 0;" valign="center" align="left">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:10px 12px 0 0;" valign="top" align="left"><a href="http://www.gastro.org/"><img src="https://s3.amazonaws.com/agaassets/images/aga_seal_new.png" alt="American Gastroenterological Association" style="display:block;" border="0" height="72" width="72" /></a></td>
+                                                <td style="color:#a9a9a9;font-family:Arial,sans-serif;font-size:13px;line-height:16px;" valign="center" align="left">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" alt="" style="display:block;border:none;" height="25" width="13" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">301-654-2055</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" alt="" style="display:block;border:none;" height="25" width="13" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">4930 Del Ray Ave. Bethesda, MD 20814</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="block" style="color:#a9a9a9;font-family:Arial, sans-serif;font-size:24px;line-height:23px;" valign="center" align="left">
+                                    <!--[if mso]>
+                                <font face="Helvetica, sans-serif"><![endif]-->Stay Connected
+                                    <!--[if mso]></font><![endif]-->
+                                    <table class="social" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.facebook.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" alt="Facebook" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.linkedin.com/groups/915257"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" alt="Instagram" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://www.youtube.com/user/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" alt="YouTube" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" valign="top" align="left"><a href="https://twitter.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" alt="Twitter" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding: 20px 0 0 0;" valign="top" align="left"><a href="http://community.gastro.org"><img src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif" alt="Community" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="item" style="padding:32px 29px 32px 35px;" valign="top" bgcolor="#1e1c20" align="left">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="color:#ffffff;font-family:Arial, sans-serif;font-size:10px;line-height:20px;" valign="top" align="left">Copyright &copy; American Gastroenterological Association&nbsp;&bull;&nbsp;To opt out of AGA emails, change your <a href=" http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="text-decoration: none; color: #008FD4;"> email preferences</a>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- *%% /footer %%* -->
+    <!-- *-------===== external css =====-------* -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/agaemails/stylesheets/main.css" />
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tip Of The Month</title>
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_AGA+Products.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Advocacy.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Career+Tools.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Connect+with+AGA.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_DDW+Early+Registration.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Interact+with+AGA.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Journals+Online.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Member+Benefits.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Member+Discounts.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_My+AGA+Image.jpg-->
+    <!--s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Online+Education.jpg-->
+    <style type="text/css">
+        table.wrapper {}
+
+        img.resize {}
+
+        .item {}
+
+        .item img {}
+
+        .item img.disappear {}
+
+        .item img.noresize {}
+
+        .item1 {}
+
+        .item1 {
+            width: 310px !important;
+        }
+
+        .item1 {
+            width: 480px !important;
+        }
+        /* Reset Styles */
+        /* Add 100px so mobile switch bar doesn't cover street address. */
+
+        body {
+            background-color: #EAEEEF;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+        }
+
+        br,
+        strong br,
+        b br,
+        em br,
+        i br {
+            line-height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 100% !important;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a:link {
+            text-decoration: none !important;
+            color: #008FD4;
+        }
+
+        h1 a,
+        h2 a,
+        h3 a,
+        h4 a,
+        h5 a,
+        h6 a {
+            color: #0A5687 !important;
+        }
+
+        h1 a:active,
+        h2 a:active,
+        h3 a:active,
+        h4 a:active,
+        h5 a:active,
+        h6 a:active {
+            color: red !important;
+        }
+        /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        h1 a:visited,
+        h2 a:visited,
+        h3 a:visited,
+        h4 a:visited,
+        h5 a:visited,
+        h6 a:visited {
+            color: #008FD4 !important;
+        }
+        /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+
+        table td,
+        table tr {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts,
+        .yshortcuts a,
+        .yshortcuts a:link,
+        .yshortcuts a:visited,
+        .yshortcuts a:hover,
+        .yshortcuts a span {
+            color: black;
+            text-decoration: none !important;
+            border-bottom: none !important;
+            background: none !important;
+        }
+        /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+        /* Preheader */
+
+        span.preheader {
+            display: none !important;
+        }
+
+        #preheader {
+            display: none !important;
+        }
+
+        #tip-header-mobile {
+            display: none;
+            background-color: transparent;
+        }
+
+        @media screen and (max-width: 480px) {
+            table.wrapper {
+                width: 310px !important;
+            }
+            img.resize {
+                width: 310px !important;
+                height: auto !important;
+            }
+            .item {
+                width: 310px !important;
+            }
+            td.item {
+                padding: 0 !important;
+            }
+            td#content.item {
+                padding: 10px 0 10px 20px !important;
+            }
+            tr td#header.item {
+                padding: 10px 10px 0 10px !important;
+            }
+            /*.item img {width: 310px !important;  height: auto !important;}*/
+            /*.item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0px !important;
+            }
+            #tip-header {
+                display: none;
+            }
+            table#tip-header-mobile {
+                display: block;
+                font-size: 20px !important;
+            }
+            table#tip-header-mobile td>p>span {
+                padding: 0 10px !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 699px) {
+            table.wrapper {
+                width: 480px !important;
+            }
+            img.resize {
+                width: 480px !important;
+                height: auto !important;
+            }
+            .item {
+                width: 480px !important;
+            }
+            td.item {
+                padding: 0 !important;
+            }
+            /*.item img {width: 480px !important;  height: auto !important;}
+            .item img.noresize {width: inherit !important;}*/
+            .item img.disappear {
+                display: none !important;
+            }
+            .logotext {
+                display: none;
+            }
+            td#seal {
+                padding: 0px !important;
+            }
+            #tip-header {
+                display: none;
+            }
+            table#tip-header-mobile {
+                display: block;
+                font-size: 20px !important;
+            }
+            table#tip-header-mobile td>p>span {
+                padding: 0 10px !important;
+            }
+            #forward-btn {
+                max-width: 100px;
+            }
+            /* footer */
+            td.item {
+                padding: 0 !important;
+            }
+            td.block {
+                display: block !important;
+                padding: 10px !important;
+            }
+            #account {
+                padding: 0 !important;
+            }
+            td.social-footer {
+                padding: 0 0.5em !important;
+            }
+            td.logo-footer {
+                padding: 0 0 0 10px !important;
+            }
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+</head>
+
+<body>
+    <!-- *%%%%%%%=== Preheader ===%%%%%%%* -->
+    <div id="preheader">
+        <singleline label="PreHeader"> <span style="display: none !important; font-size: 0; color: #EAEEEF;"> </span>Learn how AGA works for the interests of GIs on Capitol Hill.</singleline>
+    </div>
+    <!-- *%%%%%%%=== /Preheader ===%%%%%%%* -->
+    <!-- *-===== View Online =====-* -->
+    <table class="wrapper" style="margin-top:5px; background-color: #EAEEEF;" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        <tbody>
+            <tr bgcolor="#EAEEEF">
+                <td height="3"></td>
+            </tr>
+            <tr bgcolor="#EAEEEF">
+                <td style="color: #000000; font-size: 11px; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" bgcolor="#EAEEEF" align="center">Trouble viewing this message? <a href="%%VIEWONLINE%%" style="text-decoration: none; color: #008FD4">View it online.</a></td>
+            </tr>
+            <tr bgcolor="#EAEEEF">
+                <td height="3"></td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+        </tbody>
+    </table>
+    <!-- *-===== /View Online =====-* -->
+    <table class="wrapper" style="background-color: #FFFFFF;" cellspacing="0" cellpadding="0" border="0" align="center" width="700">
+        <tbody>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #EAEEEF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <tr>
+                <td class="item" style="padding: 0!important; text-align: center;" align="left"><a href="#">                     <img src="http://s3.amazonaws.com/agaemails/images/tip_of_the_month_heros/TOTM_Advocacy.jpg" alt="Image" class="resize" style="display: inline; margin: 0px;" border="0" align="top" height="" width="700" />                 </a></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="item" cellspacing="0" cellpadding="0" border="0" align="center" width="698">
+                        <!-- *-------===== mso spacer =====-------* -->
+                        <tbody>
+                            <tr>
+                                <!--[if mso]>
+                            <td style="background-color: #FFFFFF;"><p>&nbsp;</p></td><![endif]-->
+                            </tr>
+                            <!-- *-------=====/mso spacer =====-------* -->
+                            <tr>
+                                <td align="left" width="-32"><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" height="15" width="15" /></td>
+                                <td class="item" style="color: #000000; font-size: 16px; font-weight: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 23px; vertical-align: top; padding: 20px 0 !important;" align="left" width="662">
+                                    <p style="padding-bottom: 10px;"><span style="color:#66952D; font-size: 25px; font-weight:bold; line-height: 1.3em; text-transform:uppercase;"> 										TIP OF THE MONTH &bull; JULY 2017</span> <br />
+                                        <span style="color: #000000; line-height:1.3em; font-size:18px; font-weight:bold;">Throughout your first year as an AGA member, look forward to monthly tips with essential information for making the most of your membership. Below is the tip for July 2017.</span><br
+                                        />
+                                        <br /> AGA works for you on Capitol Hill as the voice of GI. AGA's top issues are:</p>
+                                    <ul>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/reimbursement">Fair reimbursement</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/research-funding">Increased NIH funding</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/patient-cost-sharing-for-screening-colonoscopy">Colonoscopy cost sharing</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/medical-liability-reform">Medical liability reform</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/inoffice-ancillary-services">In-office ancillary services</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/payment">Payment stability for Ambulatory Surgery Centers</a></li>
+                                        <li><a href="http://www.gastro.org/take-action/top-issues/patient-access">Patient access</a></li>
+                                    </ul>
+                                    <p>To advance this mission, AGA's government affairs department:</p>
+                                    <ul>
+                                        <li>Works with government and regulatory agencies to protect the needs of GIs.</li>
+                                        <li>Develops and implements a rigorous public policy agenda.</li>
+                                        <li>Gives GIs a greater presence on Capitol Hill with AGA PAC, the only political action committee supported by a national gastroenterological society.</li>
+                                        <li>Provides opportunities for you to contact your legislators.</li>
+                                    </ul>
+                                    <p style="padding-bottom: 10px;">Visit <a href="http://www.gastro.org/advocacy">www.gastro.org/advocacy</a> to learn more.&nbsp;</p>
+                                    Questions about your membership? Contact AGA Member Relations at 301-941-2651 or <a style="text-decoration: none!important; color: #008FD4;" href="mailto:member@gastro.org">member@gastro.org</a>.
+                                    <p></p>
+                                    <a href="http://www.gastro.org" style="color:#008FD4; text-decoration: none;">
+                                        <!-- *%%%%%%%--=== button ===--%%%%%%%* -->
+                                        <div style="margin: 0 auto;"></div>
+                                        <!-- *%%%%%%%--===/button ===--%%%%%%%* -->
+                                    </a>
+                                </td>
+                                <td align="left" width="62"><img src="https://s3.amazonaws.com/agaemails/stylesheets/spacer.gif" alt="" height="15" width="15" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- *-------===== mso spacer =====-------* -->
+            <tr>
+                <!--[if mso]>
+                <td style="background-color: #FFFFFF;"><p>&nbsp;</p></td><![endif]-->
+            </tr>
+            <!-- *-------=====/mso spacer =====-------* -->
+            <!-- *%% footer %%* -->
+        </tbody>
+    </table>
+    <table class="item" style="width:700px;" cellspacing="0" cellpadding="0" border="0" align="center" width="700">
+        <tbody>
+            <tr>
+                <td class="item" style="padding:10px 35px 10px 35px;" bgcolor="#2c292e" align="left" valign="top">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="block" style="padding:27px 30px 27px 0;" align="left" valign="center">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:10px 12px 0 0;" align="left" valign="top"><a href="http://www.gastro.org/"><img src="https://s3.amazonaws.com/agaemails/images/redesign_assets/AGA+seal.png" alt="American Gastroenterological Association" style="display:block;" border="0" height="72" width="72" /></a></td>
+                                                <td style="color:#a9a9a9;font-family:Arial,sans-serif;font-size:13px;line-height:16px;" align="left" valign="center">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/cell_icon.png" alt="" style="display:block;border:none;" height="25" width="13" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">301-654-2055</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px 5px 10px 10px;"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/pin_drop_icon.png" alt="" style="display:block;border:none;" height="25" width="13" /></td>
+                                                                <td style="padding:0 0 0 10px;"><span style="color:#ffffff; font-family:Arial,sans-serif;" class="ioslinks">4930 Del Ray Ave. Bethesda, MD 20814</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="block" style="color:#a9a9a9;font-family:Arial, sans-serif;font-size:24px;line-height:23px;" align="left" valign="center">
+                                    <!--[if mso]>
+                                    <font face="Helvetica, sans-serif"><![endif]-->Stay Connected
+                                    <!--[if mso]></font><![endif]-->
+                                    <table class="social" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:20px 5px 0 0;" align="left" valign="top"><a href="https://www.facebook.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/facebook.gif" alt="Facebook" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" align="left" valign="top"><a href="https://www.linkedin.com/groups/915257"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/instagram.gif" alt="Instagram" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" align="left" valign="top"><a href="https://www.youtube.com/user/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/youtube.gif" alt="YouTube" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding:20px 5px 0 0;" align="left" valign="top"><a href="https://twitter.com/AmerGastroAssn"><img src="http://www.highroadsolution.com/clients/aga/edigest/images/twitter.gif" alt="Twitter" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                                <td style="padding: 20px 0 0 0;" align="left" valign="top"><a href="http://community.gastro.org"><img src="http://echo4.bluehornet.com/cimages/cac45d81daa02474c0cc98bf29e5485f/community.gif" alt="Community" style="display:block;" border="0" height="54" width="55" /></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="item" style="padding:32px 29px 32px 35px;" bgcolor="#1e1c20" align="left" valign="top">
+                    <table class="item" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="color:#ffffff;font-family:Arial, sans-serif;font-size:10px;line-height:20px;" align="left" valign="top">Copyright &copy; American Gastroenterological Association&nbsp;&bull;&nbsp;To opt out of AGA emails, change your <a href="http://aga.highroadsolution.com/default.aspx?email=%%TO_EMAIL%%" style="text-decoration: none; color: #008FD4;"> email preferences</a>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- *%% /footer %%* -->
+</body>
+
+</html>
